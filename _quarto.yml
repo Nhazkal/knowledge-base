@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Knowledge Base"
+
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "R"
+        href: r/index.qmd
+      - text: "Python"
+        href: python/index.qmd
+      - text: "Positron"
+        href: positron/index.qmd
+      - text: "General"
+        href: general/index.qmd
+
+    tools:
+      - icon: github
+        href: https://github.com/
+
+  search: true
+  page-navigation: true
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    code-overflow: wrap

@@ -54,3 +54,7 @@ Powershell: git status
 git branch -M main
 git remote add origin https://github.com/Nhazkal/knowledge-base.git
 git push -u origin main
+
+### 7. Create all folders + index.qmd file with minimal info
+
+Powershell: quarto preview

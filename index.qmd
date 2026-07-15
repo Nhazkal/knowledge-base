@@ -1,0 +1,14 @@
+---
+title: "Knowledge Base"
+---
+
+# Welcome
+
+This is my personal technical knowledge base.
+
+## Current topics
+
+- [R](r/index.qmd)
+- [Python](python/index.qmd)
+- [Positron](positron/index.qmd)
+- [General](general/index.qmd)
