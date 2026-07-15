@@ -58,3 +58,13 @@ git push -u origin main
 ### 7. Create all folders + index.qmd file with minimal info
 
 Powershell: quarto preview
+
+### 8. Commit again
+
+git status
+git add .
+git commit -m "Create initial Quarto website structure"
+git push
+
+### 9. Set up GitHub Pages deployment
+
