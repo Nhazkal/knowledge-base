@@ -2,6 +2,56 @@
 title: "Python"
 ---
 
-# Python
+# Overview
 
-Notes and reference material related to Python.
+Python is an open-source, general-purpose programming language first released
+in 1991. It was designed with an emphasis on readability and can be used across
+a wide range of domains, including software development, automation, data
+science, machine learning, and artificial intelligence.
+
+Python supports multiple programming paradigms, including object-oriented,
+procedural, and functional programming.
+
+## Python for data science
+
+Python's role in data science is largely supported by a broad ecosystem of
+specialized libraries.
+
+### NumPy
+
+**NumPy** (*Numerical Python*) provides efficient multidimensional arrays and
+numerical computing capabilities. It forms part of the computational foundation
+of the scientific Python ecosystem.
+
+Common uses include:
+
+- multidimensional arrays;
+- matrix operations;
+- numerical calculations;
+- linear algebra.
+
+### pandas
+
+**pandas** provides data structures and tools for working with tabular data.
+
+Common operations include:
+
+- importing data;
+- filtering observations;
+- selecting variables;
+- sorting data;
+- transforming data;
+- summarizing and exploring datasets.
+
+### Deep learning
+
+Python has a large ecosystem of specialized machine-learning and deep-learning
+frameworks, including **TensorFlow**.
+
+## Relationship to R
+
+Python is a general-purpose programming language with a broad software
+ecosystem, whereas R was designed specifically for statistical computing and
+data analysis.
+
+See [R and Python](../general/r-vs-python.qmd) for a comparison.

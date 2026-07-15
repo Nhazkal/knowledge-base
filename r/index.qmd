@@ -2,6 +2,54 @@
 title: "R"
 ---
 
-# R
+# Overview
 
-Notes and reference material related to the R programming language.
+R is an open-source programming language and environment designed primarily for
+statistical computing, data analysis, and data visualization.
+
+Development of R began in the early 1990s, and the language has since developed
+a large ecosystem of packages for statistics, epidemiology, data science, and
+scientific research.
+
+## R history
+
+- [History of R](history.qmd)
+
+## CRAN
+
+The **Comprehensive R Archive Network (CRAN)** is the primary repository for
+R packages and distributions of R.
+
+CRAN provides access to packages that extend R for specialized tasks such as:
+
+- statistical modeling;
+- data manipulation;
+- visualization;
+- epidemiology;
+- machine learning;
+- reporting and reproducible research.
+
+## R for data analysis
+
+R is particularly well suited to analytical and statistical workflows.
+
+Its ecosystem includes tools for:
+
+- data manipulation;
+- exploratory data analysis;
+- statistical modeling;
+- visualization;
+- reproducible reporting.
+
+### Data visualization
+
+The R ecosystem includes **ggplot2**, a widely used system for declarative data
+visualization based on the *Grammar of Graphics*.
+
+## Relationship to Python
+
+R was designed primarily around statistical computing and data analysis,
+whereas Python is a general-purpose programming language with applications
+extending well beyond data science.
+
+See [R and Python](../general/r-vs-python.qmd) for a comparison.

@@ -3,9 +3,9 @@
 
 # Knowledge Base
 
-Personal technical knowledge base built with Quarto.
+Personal technical knowledge base.
 
-The purpose of this repository is to organize and synthesize notes on:
+The purpose of this repository is to organize and synthesize information on:
 
 - R
 - Python

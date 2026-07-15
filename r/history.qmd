@@ -1,0 +1,140 @@
+---
+title: "A Brief History of R"
+description: "The development of R from S, through the open-source ecosystem, the tidyverse, and modern publishing tools."
+---
+
+# Origins in S
+
+## 1976: The S language
+
+The history of R begins with **S**, a language for statistical computing developed at Bell Laboratories by John Chambers and colleagues beginning in the 1970s.
+
+S emphasized interactive data analysis, allowing statisticians to work directly with data through a programming environment rather than relying exclusively on traditional compiled workflows.
+
+## Commercialization: S-PLUS
+
+S was subsequently commercialized as **S-PLUS** by a startup named *Statistical Sciences*, making a powerful statistical programming environment available commercially but at a cost that could limit accessibility (K$).
+
+# The creation of R
+
+## Early 1990s: Ross Ihaka and Robert Gentleman
+
+At the University of Auckland, statisticians **Ross Ihaka** and **Robert Gentleman** began developing a new statistical programming environment influenced heavily by S.
+
+The name **R** refers both to the first names of its creators and to its relationship with S.
+
+## 1993: Public distribution
+
+Early versions of R became publicly available through StatLib in 1993 (August 4th).
+
+## 1995: Free and open-source software
+
+Following suggestions from Martin Mächler, R was released under the GNU General Public License, establishing the free and open-source model that would become central to its development.
+
+## 1998 ACM
+
+John Chambers won the ACM Software Systems award for the S language.
+
+## 2000: R 1.0.0
+
+R version 1.0.0 was released on February 29, 2000.
+John Chambers, created of S, joined the R core team.
+
+# The package ecosystem
+
+## CRAN
+
+The **Comprehensive R Archive Network (CRAN)** became the principal repository for distributing R and its packages.
+
+CRAN's policies emphasize package compatibility and technical quality. Its strict submission and maintenance requirements have also generated long-running debates about governance and the burden placed on package maintainers.
+
+# The tidyverse
+
+## Hadley Wickham
+
+Hadley Wickham became one of the most influential developers in the modern R ecosystem.
+
+His work includes:
+
+- **ggplot2** for data visualization using grammar of graphics (developed during his PhD);
+- **dplyr** for data manipulation;
+- **tidyr** for data tidying and reshaping;
+- **readr** for importing rectangular data.
+
+These and related packages were eventually organized under the **tidyverse** in 2016. Wickham won the COPSS Award (Nobel equivalent in Statitics) in 2019.
+
+## Base R and tidyverse
+
+The growth of the tidyverse produced an important debate within the R community (University of California Norm Matloff's essay).
+
+One perspective emphasizes the consistency and accessibility of the tidyverse approach. Critics have argued that its abstractions can obscure the underlying behavior of R and have contributed to increasingly distinct styles of R programming.
+
+These approaches are not separate languages, but they can represent substantially different programming idioms.
+
+# From analysis to communication
+
+## Shiny (2012, Joe Cheng)
+
+**Shiny**, developed at RStudio by Joe Cheng, made it possible to build interactive web applications using R instead of losing the depth of interactive ggplo2 graphs in static PDF/Powerpoints.
+
+This expanded the role of R beyond static analytical outputs by allowing users to interact directly with analyses and visualizations.
+
+## Quarto (2022)
+
+Shiny had its shortcomings: the apps were slow, required a server, and broke the moment the person who built them left.
+
+**Quarto**, the successor of rmarkdown, provided a language-independent publishing system for creating:
+
+- reports;
+- websites;
+- books;
+- presentations;
+- scientific and technical documents.
+
+It builds on the tradition of reproducible publishing established by tools such as knitr and R Markdown.
+
+## webR
+
+By 2025, **webR** could compile R for WebAssembly, allowing R code to execute directly within a web browser without requiring a conventional R installation on the user's computer.
+
+# The evolving R ecosystem
+
+## R and Python
+
+The growth of Python has repeatedly led to predictions of R's decline.
+
+In practice, the two languages increasingly coexist. R remains particularly important in areas including:
+
+- statistics;
+- epidemiology;
+- biostatistics;
+- genomics;
+- scientific research;
+- data visualization.
+
+Python has a broader role in general-purpose programming, machine learning, deep learning, and AI engineering. Modern data-science workflows can use both languages rather than treating them as mutually exclusive alternatives.
+
+# Governance and sustainability
+
+R is supported by an ecosystem involving multiple independent organizations and communities.
+
+These include:
+
+- the **R Foundation** and **R Core Team**, which oversee the R language;
+- **CRAN**, which distributes R packages;
+- **Posit**, a private company that develops RStudio, Quarto, Shiny, and contributes to numerous open-source projects;
+- independent package developers and community organizations.
+
+The distinction between the open-source language itself and companies that develop important tools around it is essential when considering the long-term sustainability of the ecosystem.
+
+# From RStudio to Positron
+
+In 2022, RStudio was rebranded as Posit. In 2023 they hired Wes McKinney, the creator of Python's *pandas*, and a month later laid off Yihui Xie, the creator of knitr and rmarkdown, the tools that made reproducible results in R possible.
+
+In 2025, Posit published RStudio's successor: Positron.
+
+# Sources and learning materials
+
+## Videos
+
+- [*R: A Brief History*](https://www.youtube.com/watch?v=FjSPm1PB6Y0) — YouTube, accessed September 2026.

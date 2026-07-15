@@ -1,0 +1,66 @@
+---
+title: "R and Python"
+---
+
+# Overview
+
+R and Python are both open-source programming languages widely used in data
+science. Their capabilities overlap substantially, but they originated with
+different priorities and developed different ecosystems.
+
+| | R | Python |
+|---|---|---|
+| Primary origin | Statistical computing | General-purpose programming |
+| Data manipulation | Strong | Strong |
+| Statistical analysis | Particularly strong | Strong |
+| Data visualization | Particularly strong | Strong |
+| General software development | Possible, but less common | Major use case |
+| Machine learning | Strong | Particularly broad ecosystem |
+| Deep learning | Available | Dominant ecosystem |
+
+# Different origins
+
+## Python
+
+Python is a general-purpose programming language. Data science is one of many
+domains in which it is used.
+
+Its data-science ecosystem includes tools such as:
+
+- NumPy for numerical computing and multidimensional arrays;
+- pandas for tabular data manipulation and exploration;
+- specialized machine-learning and deep-learning frameworks.
+
+## R
+
+R was developed specifically for statistical computing and data analysis.
+
+Its ecosystem is particularly strong in:
+
+- statistical methodology;
+- data analysis;
+- scientific research;
+- data visualization;
+- reproducible analytical reporting.
+
+# Complementary rather than mutually exclusive
+
+It is usually misleading to assign each stage of the data-science workflow
+exclusively to either R or Python.
+
+Both languages can be used for:
+
+1. data acquisition;
+2. data cleaning and transformation;
+3. exploratory analysis;
+4. statistical and predictive modeling;
+5. visualization;
+6. reporting.
+
+The choice between them depends on the problem, available libraries, existing
+infrastructure, and the user's expertise.
+
+For a workflow centered on epidemiology and statistical analysis, R may often
+serve as the primary analytical environment. Python becomes particularly useful
+when the workflow expands toward general programming, automation, machine
+learning, deep learning, and AI engineering.
