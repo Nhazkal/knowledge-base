@@ -2,6 +2,8 @@ project:
   type: website
   output-dir: _site
 
+bibliography: references.bib
+
 website:
   title: "Knowledge Base"
 
@@ -20,13 +22,14 @@ website:
 
     tools:
       - icon: github
-        href: https://github.com/
+        href: https://nhazkal.github.io/knowledge-base/
 
   search: true
   page-navigation: true
 
 format:
   html:
+    citeproc: true
     theme:
       light: cosmo
       dark: darkly

@@ -3,7 +3,7 @@
 
 # Knowledge Base
 
-Personal technical knowledge base.
+Personal technical knowledge base available online at https://nhazkal.github.io/knowledge-base/
 
 The purpose of this repository is to organize and synthesize information on:
 

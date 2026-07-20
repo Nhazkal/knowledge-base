@@ -4,14 +4,77 @@
     "href": "r/index.html",
     "title": "R",
     "section": "",
-    "text": "R\nNotes and reference material related to the R programming language."
+    "text": "R is an open-source programming language and environment designed primarily for statistical computing, data analysis, and data visualization.\nDevelopment of R began in the early 1990s, and the language has since developed a large ecosystem of packages for statistics, epidemiology, data science, and scientific research.\n\n\n\nHistory of R\n\n\n\n\nThe Comprehensive R Archive Network (CRAN) is the primary repository for R packages and distributions of R.\nCRAN provides access to packages that extend R for specialized tasks such as:\n\nstatistical modeling;\ndata manipulation;\nvisualization;\nepidemiology;\nmachine learning;\nreporting and reproducible research.\n\n\n\n\nR is particularly well suited to analytical and statistical workflows.\nIts ecosystem includes tools for:\n\ndata manipulation;\nexploratory data analysis;\nstatistical modeling;\nvisualization;\nreproducible reporting.\n\n\n\nThe R ecosystem includes ggplot2, a widely used system for declarative data visualization based on the Grammar of Graphics.\n\n\n\n\nR was designed primarily around statistical computing and data analysis, whereas Python is a general-purpose programming language with applications extending well beyond data science.\nSee R and Python for a comparison."
   },
   {
-    "objectID": "positron/index.html",
-    "href": "positron/index.html",
-    "title": "Positron",
+    "objectID": "r/index.html#r-history",
+    "href": "r/index.html#r-history",
+    "title": "R",
     "section": "",
-    "text": "Positron\nNotes and reference material related to Positron."
+    "text": "History of R"
+  },
+  {
+    "objectID": "r/index.html#cran",
+    "href": "r/index.html#cran",
+    "title": "R",
+    "section": "",
+    "text": "The Comprehensive R Archive Network (CRAN) is the primary repository for R packages and distributions of R.\nCRAN provides access to packages that extend R for specialized tasks such as:\n\nstatistical modeling;\ndata manipulation;\nvisualization;\nepidemiology;\nmachine learning;\nreporting and reproducible research."
+  },
+  {
+    "objectID": "r/index.html#r-for-data-analysis",
+    "href": "r/index.html#r-for-data-analysis",
+    "title": "R",
+    "section": "",
+    "text": "R is particularly well suited to analytical and statistical workflows.\nIts ecosystem includes tools for:\n\ndata manipulation;\nexploratory data analysis;\nstatistical modeling;\nvisualization;\nreproducible reporting.\n\n\n\nThe R ecosystem includes ggplot2, a widely used system for declarative data visualization based on the Grammar of Graphics."
+  },
+  {
+    "objectID": "r/index.html#relationship-to-python",
+    "href": "r/index.html#relationship-to-python",
+    "title": "R",
+    "section": "",
+    "text": "R was designed primarily around statistical computing and data analysis, whereas Python is a general-purpose programming language with applications extending well beyond data science.\nSee R and Python for a comparison."
+  },
+  {
+    "objectID": "python/index.html",
+    "href": "python/index.html",
+    "title": "Python",
+    "section": "",
+    "text": "Python is an open-source, general-purpose programming language first released in 1991. It was designed with an emphasis on readability and can be used across a wide range of domains, including software development, automation, data science, machine learning, and artificial intelligence.\nPython supports multiple programming paradigms, including object-oriented, procedural, and functional programming.\n\n\nPython’s role in data science is largely supported by a broad ecosystem of specialized libraries.\n\n\nNumPy (Numerical Python) provides efficient multidimensional arrays and numerical computing capabilities. It forms part of the computational foundation of the scientific Python ecosystem.\nCommon uses include:\n\nmultidimensional arrays;\nmatrix operations;\nnumerical calculations;\nlinear algebra.\n\n\n\n\npandas provides data structures and tools for working with tabular data.\nCommon operations include:\n\nimporting data;\nfiltering observations;\nselecting variables;\nsorting data;\ntransforming data;\nsummarizing and exploring datasets.\n\n\n\n\nPython has a large ecosystem of specialized machine-learning and deep-learning frameworks, including TensorFlow.\n\n\n\n\nPython is a general-purpose programming language with a broad software ecosystem, whereas R was designed specifically for statistical computing and data analysis.\nSee R and Python for a comparison."
+  },
+  {
+    "objectID": "python/index.html#python-for-data-science",
+    "href": "python/index.html#python-for-data-science",
+    "title": "Python",
+    "section": "",
+    "text": "Python’s role in data science is largely supported by a broad ecosystem of specialized libraries.\n\n\nNumPy (Numerical Python) provides efficient multidimensional arrays and numerical computing capabilities. It forms part of the computational foundation of the scientific Python ecosystem.\nCommon uses include:\n\nmultidimensional arrays;\nmatrix operations;\nnumerical calculations;\nlinear algebra.\n\n\n\n\npandas provides data structures and tools for working with tabular data.\nCommon operations include:\n\nimporting data;\nfiltering observations;\nselecting variables;\nsorting data;\ntransforming data;\nsummarizing and exploring datasets.\n\n\n\n\nPython has a large ecosystem of specialized machine-learning and deep-learning frameworks, including TensorFlow."
+  },
+  {
+    "objectID": "python/index.html#relationship-to-r",
+    "href": "python/index.html#relationship-to-r",
+    "title": "Python",
+    "section": "",
+    "text": "Python is a general-purpose programming language with a broad software ecosystem, whereas R was designed specifically for statistical computing and data analysis.\nSee R and Python for a comparison."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Knowledge Base",
+    "section": "",
+    "text": "A practical overview of statistical concepts, methods and tools for epidemiology."
+  },
+  {
+    "objectID": "index.html#references",
+    "href": "index.html#references",
+    "title": "Knowledge Base",
+    "section": "References",
+    "text": "References\n\n\nSchafer, J. L. 1999. “Multiple Imputation: A Primer.” Statistical Methods in Medical Research 8 (1): 3–15. https://doi.org/10.1177/096228029900800102."
+  },
+  {
+    "objectID": "index.html#topics",
+    "href": "index.html#topics",
+    "title": "Knowledge Base",
+    "section": "Topics",
+    "text": "Topics\n\nR\nPython\nPositron\nGeneral"
   },
   {
     "objectID": "general/index.html",
@@ -21,24 +84,178 @@
     "text": "General\nNotes and reference material."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Knowledge Base",
+    "objectID": "general/r-vs-python.html",
+    "href": "general/r-vs-python.html",
+    "title": "R and Python",
     "section": "",
-    "text": "This is my personal technical knowledge base.\n\n\n\nR\nPython\nPositron\nGeneral"
+    "text": "R and Python are both open-source programming languages widely used in data science. Their capabilities overlap substantially, but they originated with different priorities and developed different ecosystems.\n\n\n\n\n\n\n\n\nAspect\nR\nPython\n\n\n\n\nOriginal purpose\nDesigned for statistical computing and data analysis\nDesigned as a general-purpose programming language\n\n\nProgramming philosophy\nOptimized for statistical thinking and interactive data exploration\nOptimized for software engineering and general application development\n\n\nIndexing\nStarts counting from 1 (consistent with most mathematical notation)\nStarts counting from 0 (common in computer science)\n\n\nPrimary users\nStatisticians, epidemiologists, biologists, economists, data analysts\nSoftware engineers, machine learning engineers, AI developers, automation engineers\n\n\nData manipulation\nExcellent (base R, dplyr, data.table)\nExcellent (pandas, Polars, NumPy)\n\n\nStatistical analysis\nOutstanding; includes many cutting-edge statistical methods\nStrong, but often relies on libraries developed after their R equivalents\n\n\nData visualization\nOutstanding (ggplot2, lattice, plotly)\nStrong (Matplotlib, Seaborn, Plotly, Altair)\n\n\nMachine learning\nStrong (caret, tidymodels, mlr3)\nOutstanding ecosystem (scikit-learn, XGBoost, LightGBM, CatBoost)\n\n\nDeep learning & AI\nAvailable (keras, torch)\nDominant ecosystem (PyTorch, TensorFlow, JAX, Hugging Face)\n\n\nSoftware development\nPossible, but not the primary design goal\nOne of Python’s principal strengths\n\n\nDeployment\nDashboards, reports and web apps (Shiny, Quarto, plumber)\nAPIs, web services, cloud applications, AI systems\n\n\nInteroperability\nIntegrates with Python, SQL, C++, Java and JavaScript\nIntegrates with R, SQL, C/C++, Java and many other languages"
   },
   {
-    "objectID": "index.html#current-topics",
-    "href": "index.html#current-topics",
-    "title": "Knowledge Base",
-    "section": "",
-    "text": "R\nPython\nPositron\nGeneral"
+    "objectID": "general/r-vs-python.html#python",
+    "href": "general/r-vs-python.html#python",
+    "title": "R and Python",
+    "section": "Python",
+    "text": "Python\nPython is a general-purpose programming language. Data science is one of many domains in which it is used.\nIts data-science ecosystem includes tools such as:\n\nNumPy for numerical computing and multidimensional arrays;\npandas for tabular data manipulation and exploration;\nspecialized machine-learning and deep-learning frameworks."
   },
   {
-    "objectID": "python/index.html",
-    "href": "python/index.html",
-    "title": "Python",
+    "objectID": "general/r-vs-python.html#r",
+    "href": "general/r-vs-python.html#r",
+    "title": "R and Python",
+    "section": "R",
+    "text": "R\nR was developed specifically for statistical computing and data analysis.\nIts ecosystem is particularly strong in:\n\nstatistical methodology;\ndata analysis;\nscientific research;\ndata visualization;\nreproducible analytical reporting."
+  },
+  {
+    "objectID": "positron/index.html",
+    "href": "positron/index.html",
+    "title": "Positron",
     "section": "",
-    "text": "Python\nNotes and reference material related to Python."
+    "text": "Positron\nNotes and reference material related to Positron."
+  },
+  {
+    "objectID": "r/history.html",
+    "href": "r/history.html",
+    "title": "A Brief History of R",
+    "section": "",
+    "text": "The history of R begins with S, a language for statistical computing developed at Bell Laboratories by John Chambers and colleagues beginning in the 1970s.\nS emphasized interactive data analysis, allowing statisticians to work directly with data through a programming environment rather than relying exclusively on traditional compiled workflows.\nThe objective of S was not simply to provide another programming language, but to make statistical computing interactive. John Chambers sought to reduce the friction between an analytical idea and its implementation by allowing statisticians to manipulate data, test hypotheses, and visualize results directly from the command line instead of relying on lengthy compiled programs. Expressiveness and ease of experimentation were prioritized over software engineering concerns.\nThe environment in which S was developed was exceptional. Bell Laboratories also produced UNIX and the C programming language, two innovations that profoundly shaped modern computing. S emerged from this same culture of experimentation and scientific software development.\n\n\n\nS was subsequently commercialized as S-PLUS by a startup named Statistical Sciences, making a powerful statistical programming environment available commercially but at a cost that could limit accessibility (K$)."
+  },
+  {
+    "objectID": "r/history.html#the-s-language",
+    "href": "r/history.html#the-s-language",
+    "title": "A Brief History of R",
+    "section": "",
+    "text": "The history of R begins with S, a language for statistical computing developed at Bell Laboratories by John Chambers and colleagues beginning in the 1970s.\nS emphasized interactive data analysis, allowing statisticians to work directly with data through a programming environment rather than relying exclusively on traditional compiled workflows.\nThe objective of S was not simply to provide another programming language, but to make statistical computing interactive. John Chambers sought to reduce the friction between an analytical idea and its implementation by allowing statisticians to manipulate data, test hypotheses, and visualize results directly from the command line instead of relying on lengthy compiled programs. Expressiveness and ease of experimentation were prioritized over software engineering concerns.\nThe environment in which S was developed was exceptional. Bell Laboratories also produced UNIX and the C programming language, two innovations that profoundly shaped modern computing. S emerged from this same culture of experimentation and scientific software development."
+  },
+  {
+    "objectID": "r/history.html#commercialization-s-plus",
+    "href": "r/history.html#commercialization-s-plus",
+    "title": "A Brief History of R",
+    "section": "",
+    "text": "S was subsequently commercialized as S-PLUS by a startup named Statistical Sciences, making a powerful statistical programming environment available commercially but at a cost that could limit accessibility (K$)."
+  },
+  {
+    "objectID": "r/history.html#early-1990s-ross-ihaka-and-robert-gentleman",
+    "href": "r/history.html#early-1990s-ross-ihaka-and-robert-gentleman",
+    "title": "A Brief History of R",
+    "section": "Early 1990s: Ross Ihaka and Robert Gentleman",
+    "text": "Early 1990s: Ross Ihaka and Robert Gentleman\nAt the University of Auckland, statisticians Ross Ihaka and Robert Gentleman began developing a new statistical programming environment influenced heavily by S due to the inabordable costs of S for students.\nThe name R refers both to the first names of its creators and to its relationship with S."
+  },
+  {
+    "objectID": "r/history.html#public-distribution",
+    "href": "r/history.html#public-distribution",
+    "title": "A Brief History of R",
+    "section": "1993: Public distribution",
+    "text": "1993: Public distribution\nEarly versions of R became publicly available through StatLib in 1993 (August 4th)."
+  },
+  {
+    "objectID": "r/history.html#free-and-open-source-software",
+    "href": "r/history.html#free-and-open-source-software",
+    "title": "A Brief History of R",
+    "section": "1995: Free and open-source software",
+    "text": "1995: Free and open-source software\nFollowing suggestions from Martin Mächler, R was released under the GNU General Public License, establishing the free and open-source model that would become central to its development."
+  },
+  {
+    "objectID": "r/history.html#acm",
+    "href": "r/history.html#acm",
+    "title": "A Brief History of R",
+    "section": "1998 ACM",
+    "text": "1998 ACM\nJohn Chambers won the ACM Software Systems award for the S language."
+  },
+  {
+    "objectID": "r/history.html#r-1.0.0",
+    "href": "r/history.html#r-1.0.0",
+    "title": "A Brief History of R",
+    "section": "2000: R 1.0.0",
+    "text": "2000: R 1.0.0\nR version 1.0.0 was released on February 29, 2000. John Chambers, creator of S, joined the R core team."
+  },
+  {
+    "objectID": "r/history.html#s",
+    "href": "r/history.html#s",
+    "title": "A Brief History of R",
+    "section": "2000s",
+    "text": "2000s\nBy the late 2000s, the free and open-source R language had largely supplanted both S and its commercial implementation, S-PLUS, which are now essentially obsolete. Nevertheless, the influence of S remains profound, as many of the concepts it pioneered continue to form the foundation of modern R. Notably:\n\ninteractive statistical computing;\nvectorized operations;\nformula syntax (e.g., y ~ x);\ndata frames;\ngeneric functions and method dispatch.\n\nJohn Chambers summarized the philosophy behind S with the statement:\n\n“Everything that exists is an object.”\n\nAlthough R has evolved substantially beyond S over the past three decades, this object-oriented philosophy remains one of the language’s defining principles."
+  },
+  {
+    "objectID": "r/history.html#cran",
+    "href": "r/history.html#cran",
+    "title": "A Brief History of R",
+    "section": "CRAN",
+    "text": "CRAN\nThe Comprehensive R Archive Network (CRAN) became the principal repository for distributing R and its packages. CRAN rapidly evolved into one of the largest scientific software ecosystems in the world. Rather than waiting for new versions of R itself, researchers could distribute new statistical methods as packages, allowing cutting-edge techniques to become available almost immediately.\nCRAN’s policies emphasize package compatibility and technical quality. Its strict submission and maintenance requirements have also generated long-running debates about governance and the burden placed on package maintainers.\nThis fueled an expansion of R into a whole larger ecosystem including: - econometrics - finance - machine learning - GIS - bioinformatics - text mining"
+  },
+  {
+    "objectID": "r/history.html#hadley-wickham",
+    "href": "r/history.html#hadley-wickham",
+    "title": "A Brief History of R",
+    "section": "Hadley Wickham",
+    "text": "Hadley Wickham\nHadley Wickham became one of the most influential developers in the modern R ecosystem.\nHis work includes:\n\nggplot2 for data visualization using grammar of graphics (developed during his PhD);\ndplyr for data manipulation;\ntidyr for data tidying and reshaping;\nreadr for importing rectangular data.\n\nThese and related packages were eventually organized under the tidyverse in 2016. Wickham won the COPSS Award (Nobel equivalent in Statitics) in 2019."
+  },
+  {
+    "objectID": "r/history.html#base-r-and-tidyverse",
+    "href": "r/history.html#base-r-and-tidyverse",
+    "title": "A Brief History of R",
+    "section": "Base R and tidyverse",
+    "text": "Base R and tidyverse\nThe growth of the tidyverse produced an important debate within the R community (University of California Norm Matloff’s essay).\nOne perspective emphasizes the consistency and accessibility of the tidyverse approach. Critics have argued that its abstractions can obscure the underlying behavior of R and have contributed to increasingly distinct styles of R programming.\nThese approaches are not separate languages, but they can represent substantially different programming idioms."
+  },
+  {
+    "objectID": "r/history.html#shiny-2012-joe-cheng",
+    "href": "r/history.html#shiny-2012-joe-cheng",
+    "title": "A Brief History of R",
+    "section": "Shiny (2012, Joe Cheng)",
+    "text": "Shiny (2012, Joe Cheng)\nShiny, developed at RStudio by Joe Cheng, made it possible to build interactive web applications using R instead of losing the depth of interactive ggplo2 graphs in static PDF/Powerpoints.\nThis expanded the role of R beyond static analytical outputs by allowing users to interact directly with analyses and visualizations."
+  },
+  {
+    "objectID": "r/history.html#quarto-2022",
+    "href": "r/history.html#quarto-2022",
+    "title": "A Brief History of R",
+    "section": "Quarto (2022)",
+    "text": "Quarto (2022)\nShiny had its shortcomings: the apps were slow, required a server, and broke the moment the person who built them left. Whereas Shiny enables interactive web applications, Quarto focuses on reproducible publishing. It unifies reports, books, websites, presentations, and scientific documents within a language-independent publishing system supporting R, Python, Julia, and Observable JavaScript.\nQuarto, the successor of rmarkdown, provided a language-independent publishing system for creating:\n\nreports;\nwebsites;\nbooks;\npresentations;\nscientific and technical documents.\n\nIt builds on the tradition of reproducible publishing established by tools such as knitr and R Markdown."
+  },
+  {
+    "objectID": "r/history.html#webr",
+    "href": "r/history.html#webr",
+    "title": "A Brief History of R",
+    "section": "webR",
+    "text": "webR\nBy 2025, webR could compile R for WebAssembly, allowing R code to execute directly within a web browser without requiring a conventional R installation on the user’s computer."
+  },
+  {
+    "objectID": "r/history.html#r-and-python",
+    "href": "r/history.html#r-and-python",
+    "title": "A Brief History of R",
+    "section": "R and Python",
+    "text": "R and Python\nThe growth of Python has repeatedly led to predictions of R’s decline. In practice, modern data science increasingly combines the strengths of R and Python rather than treating them as competing languages. R remains particularly strong for statistical modelling and scientific communication, whereas Python dominates software engineering, machine learning deployment, and AI infrastructure.\nA detailed comparison of the two languages is available in the R vs Python section."
+  },
+  {
+    "objectID": "r/history.html#videos",
+    "href": "r/history.html#videos",
+    "title": "A Brief History of R",
+    "section": "Videos",
+    "text": "Videos\n\nCodeSource (CodeSource 2026)\nModelCraft+ (ModelCraft+ 2026)\nDuke Centter for Computational Thinking(Duke Center for Computational Thinking 2022)"
+  },
+  {
+    "objectID": "r/history.html#references",
+    "href": "r/history.html#references",
+    "title": "A Brief History of R",
+    "section": "References",
+    "text": "References\n\n\nCodeSource. 2026. The Untold Story of R.\n\n\nDuke Center for Computational Thinking. 2022. What’s the Difference Between R and RStudio?\n\n\nModelCraft+. 2026. The History of R (Programming Language)."
+  },
+  {
+    "objectID": "r/history.html#beyond-point-and-click-software",
+    "href": "r/history.html#beyond-point-and-click-software",
+    "title": "A Brief History of R",
+    "section": "Beyond point-and-click software",
+    "text": "Beyond point-and-click software\nBefore R, many statistical packages such as SPSS, Stata, and Excel relied primarily on graphical interfaces and menu-driven workflows. Although these programs were often easier for beginners, they also made analyses more difficult to reproduce because many analytical decisions and model assumptions were hidden behind mouse clicks rather than explicitly documented.\nR fundamentally changed this relationship. Every analytical step became code that could be inspected, shared, modified, and rerun, greatly improving reproducibility and scientific transparency."
+  },
+  {
+    "objectID": "r/history.html#open-source-statistical-computing",
+    "href": "r/history.html#open-source-statistical-computing",
+    "title": "A Brief History of R",
+    "section": "Open-source statistical computing",
+    "text": "Open-source statistical computing\nUnlike many commercial statistical packages available during the 1990s, R was released as free and open-source software.\nThis decision transformed R into a collaborative platform rather than simply another statistical program. Anyone could:\n\ninspect the source code;\ncontribute improvements;\ndevelop new packages;\ndistribute methods to the wider community.\n\nThis extensibility became one of the principal reasons for R’s rapid growth."
+  },
+  {
+    "objectID": "r/history.html#r-core-team",
+    "href": "r/history.html#r-core-team",
+    "title": "A Brief History of R",
+    "section": "R Core Team",
+    "text": "R Core Team\nDevelopment of R itself is coordinated by the R Core Team, an international group of volunteer developers responsible for the language and its standard libraries. This governance is independent from companies such as Posit, although many organizations contribute tools that extend the R ecosystem."
   }
 ]

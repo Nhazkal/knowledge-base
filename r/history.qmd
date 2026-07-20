@@ -1,15 +1,21 @@
 ---
-title: "A Brief History of R"
+title: "A Brief History and Evolution of R"
 description: "The development of R from S, through the open-source ecosystem, the tidyverse, and modern publishing tools."
 ---
 
 # Origins in S
 
-## 1976: The S language
+## 1976, 1988, 1991: The S language
 
 The history of R begins with **S**, a language for statistical computing developed at Bell Laboratories by John Chambers and colleagues beginning in the 1970s.
 
 S emphasized interactive data analysis, allowing statisticians to work directly with data through a programming environment rather than relying exclusively on traditional compiled workflows.
+
+The first version of S appeared at Bell Labs around 1976 as an interactive statistical computing environment built on top of existing Fortran numerical libraries. By the late 1980s, the S interpreter had largely been rewritten in C (The New S Language, 1988), while continuing to rely on proven Fortran routines for many statistical computations. The goal was to let statisticians focus on data analysis rather than writing low-level Fortran code. John Chambers' 1991 book Statistical Models in S introduced many concepts—including formulas, model objects, and generic functions—that would later become central features of R.
+
+The objective of S was not simply to provide another programming language, but to make statistical computing interactive. John Chambers sought to reduce the friction between an analytical idea and its implementation by allowing statisticians to manipulate data, test hypotheses, and visualize results directly from the command line instead of relying on lengthy compiled programs. Expressiveness and ease of experimentation were prioritized over software engineering concerns.
+
+The environment in which S was developed was exceptional. Bell Laboratories also produced UNIX and the C programming language, two innovations that profoundly shaped modern computing. S emerged from this same culture of experimentation and scientific software development.
 
 ## Commercialization: S-PLUS
 
@@ -19,9 +25,17 @@ S was subsequently commercialized as **S-PLUS** by a startup named *Statistical 
 
 ## Early 1990s: Ross Ihaka and Robert Gentleman
 
-At the University of Auckland, statisticians **Ross Ihaka** and **Robert Gentleman** began developing a new statistical programming environment influenced heavily by S.
+At the University of Auckland, statisticians **Ross Ihaka** and **Robert Gentleman** began developing a new statistical programming environment influenced heavily by S due to the inabordable costs of S for students.
 
 The name **R** refers both to the first names of its creators and to its relationship with S.
+
+## Combining S and Scheme
+
+Although R was heavily influenced by S, it was not simply a free reimplementation of it. Ross Ihaka and Robert Gentleman combined the statistical interface of S with ideas drawn from **Scheme**, a functional programming language derived from Lisp.
+
+One of Scheme's most important contributions to R was **lexical scoping**. When R evaluates a name inside a function, it first searches the function's current evaluation environment and then follows the chain of enclosing environments associated with where the function was created. This differs from simply searching the global environment followed by package namespaces.
+
+Lexical scoping made it possible for R functions to retain access to the environments in which they were created. This supports features such as closures, function factories, and functional programming techniques.
 
 ## 1993: Public distribution
 
@@ -37,16 +51,156 @@ John Chambers won the ACM Software Systems award for the S language.
 
 ## 2000: R 1.0.0
 
-R version 1.0.0 was released on February 29, 2000.
-John Chambers, created of S, joined the R core team.
+R version 1.0.0 was released on February 29, 2000. John Chambers, creator of S, joined the R core team.
+
+## R's implementation: C, Fortran, and R
+
+R is itself implemented using several programming languages. Much of its interpreter and internal infrastructure is written in **C**, while many numerical and statistical routines rely on **Fortran**. Higher-level functions are also implemented in R itself.
+
+Fortran remains important because scientific computing already possessed a large collection of fast, reliable, and extensively validated numerical routines (e.g. to compute averages, standard deviations, etc.). Fundamental numerical operations did not need to be repeatedly rewritten in newer programming languages merely because those languages had become available.
+
+Historically, approximately half of the R core codebase has been written in C, with substantial portions written in Fortran and R. Exact proportions depend on the R version and on how lines of code are classified, so figures such as 50% C, 25% Fortran, and 25% R should be understood as approximate rather than fixed.
+
+## 2000s
+
+By the late 2000s, the free and open-source R language had largely supplanted both S and its commercial implementation, **S-PLUS**, which are now essentially obsolete. Nevertheless, the influence of S remains profound, as many of the concepts it pioneered continue to form the foundation of modern R. Notably:
+
+- interactive statistical computing;
+- vectorized operations;
+- formula syntax (e.g., `y ~ x`);
+- data frames;
+- generic functions and method dispatch.
+
+R nevertheless differed from S in important respects, most notably through its adoption of lexical scoping from Scheme.
+
+John Chambers summarized the philosophy behind S with the statement:
+
+> *"Everything that exists is an object."*
+
+Although R has evolved substantially beyond S over the past three decades, this object-oriented philosophy remains one of the language's defining principles.
+
+# Understanding the R language
+
+## Multi-paradigm language
+
+R is a **multi-paradigm programming language**, supporting procedural, object-oriented, and functional programming.
+
+One of R's fundamental design principles is that **everything is an object**, including data, functions, models, and even expressions. Functions are **first-class objects**, meaning they can be assigned to variables, passed to other functions, and returned as results.
+
+Most operations in R are performed by calling functions, which are always followed by parentheses, for example:
+
+```r
+mean(x)
+plot(x, y)
+```
+
+Like most programming languages, **R is case-sensitive**.
+
+## Interpreted language
+
+R is an **interpreted language**, allowing users to execute code interactively rather than compiling an entire program before running it.
+
+When code is submitted, R parses and evaluates each expression in sequence, making it particularly well suited for exploratory data analysis, statistical modelling, and interactive programming.
+
+## Packages
+
+R is distributed with several **base and recommended packages** that are installed by default. Examples include:
+
+- **base**: `mean()`
+- **utils**: `read.csv()`
+- **stats**: `lm()`, `sd()`
+
+Thousands of additional packages extend R's capabilities. Most are distributed through **CRAN** (*Comprehensive R Archive Network*), although many are also available from **GitHub**, **Bioconductor**, and **Posit Package Manager**.
+
+Some historically influential packages include:
+
+- **ggplot2** — implementation of the Grammar of Graphics;
+- **plyr** — early tools for splitting, applying, and combining data (largely superseded by **dplyr**);
+- **digest** — cryptographic hash functions for R objects;
+- **colorspace** — advanced colour manipulation;
+- **scales** — graphical scales and axis transformations;
+- **proto** — prototype-based object system used by early versions of **ggplot2**.
+
+## Data frames
+
+One of the cornerstones of R is how data are stored. The most commonly used structure is the **data frame**.
+
+A data frame is a **list of equal-length vectors**, where each vector represents a variable (column) and each row represents an observation. Conceptually, it closely resembles a relational database table or spreadsheet.
+
+## Extending R
+
+Although R is interpreted, it interoperates with lower-level languages for performance-critical code. The most widely used interface is **Rcpp**, which allows C++ code to be called directly from R while exposing R objects to C++.
+
+R also integrates with many external systems and programming languages, making it possible to combine R's statistical capabilities with high-performance computing, databases, and machine learning frameworks.
+
+## Performance and limitations
+
+R prioritizes flexibility and interactive analysis over raw execution speed.
+
+Compared with compiled languages such as C++ or Rust, R is generally slower because most code is interpreted. Base R also executes most operations on a single thread, although many packages support multicore computing.
+
+Another important limitation is memory usage: R primarily stores objects in RAM, making available memory an important consideration when working with very large datasets.
+
+# R as a scientific computing platform
+
+Although R was originally developed for statistical computing, it has evolved into a general platform for data analysis and scientific computing. Through its standard libraries and package ecosystem, R supports:
+
+- descriptive and inferential statistics;
+- probability distributions and statistical modelling;
+- machine learning;
+- optimization and mathematical programming;
+- simulation and Monte Carlo methods;
+- signal processing;
+- data visualization;
+- interactive graphics and web applications;
+- reproducible scientific reporting.
+
+# Why R changed statistics
+
+## Beyond point-and-click software
+
+Before R, many statistical packages such as SPSS, Stata, and Excel relied primarily on graphical interfaces and menu-driven workflows. Although these programs were often easier for beginners, they also made analyses more difficult to reproduce because many analytical decisions and model assumptions were hidden behind mouse clicks rather than explicitly documented.
+
+R fundamentally changed this relationship. Every analytical step became code that could be inspected, shared, modified, and rerun, greatly improving reproducibility and scientific transparency.
+
+## Open-source statistical computing
+
+Unlike many commercial statistical packages available during the 1990s, R was released as free and open-source software.
+
+This decision transformed R into a collaborative platform rather than simply another statistical program. Anyone could:
+
+- inspect the source code;
+- contribute improvements;
+- develop new packages;
+- distribute methods to the wider community.
+
+This extensibility became one of the principal reasons for R's rapid growth.
 
 # The package ecosystem
 
+## R Core Team
+
+Development of R itself is coordinated by the R Core Team, an international group of volunteer developers responsible for the language and its standard libraries. This governance is independent from companies such as Posit, although many organizations contribute tools that extend the R ecosystem.
+
 ## CRAN
 
-The **Comprehensive R Archive Network (CRAN)** became the principal repository for distributing R and its packages.
+The **Comprehensive R Archive Network (CRAN)** became the principal repository for distributing R and its packages. CRAN rapidly evolved into one of the largest scientific software ecosystems in the world. Rather than waiting for new versions of R itself, researchers could distribute new statistical methods as packages, allowing cutting-edge techniques to become available almost immediately.
 
 CRAN's policies emphasize package compatibility and technical quality. Its strict submission and maintenance requirements have also generated long-running debates about governance and the burden placed on package maintainers.
+
+This fueled an expansion of R into a whole larger ecosystem including:
+- econometrics
+- finance
+- machine learning
+- GIS
+- bioinformatics
+- text mining
+
+## Package compatibility
+
+The rapid development of R and its packages occasionally introduces compatibility issues between package versions and new releases of R.
+
+To improve reproducibility, tools such as **renv** allow projects to record the exact package versions used during an analysis. This makes it possible to recreate the same computational environment years later, even after CRAN packages have evolved.
 
 # The tidyverse
 
@@ -71,6 +225,8 @@ One perspective emphasizes the consistency and accessibility of the tidyverse ap
 
 These approaches are not separate languages, but they can represent substantially different programming idioms.
 
+# Beyond statistics: R as a data science platform
+
 # From analysis to communication
 
 ## Shiny (2012, Joe Cheng)
@@ -81,7 +237,7 @@ This expanded the role of R beyond static analytical outputs by allowing users t
 
 ## Quarto (2022)
 
-Shiny had its shortcomings: the apps were slow, required a server, and broke the moment the person who built them left.
+Shiny had its shortcomings: the apps were slow, required a server, and broke the moment the person who built them left. Whereas Shiny enables interactive web applications, Quarto focuses on reproducible publishing. It unifies reports, books, websites, presentations, and scientific documents within a language-independent publishing system supporting R, Python, Julia, and Observable JavaScript.
 
 **Quarto**, the successor of rmarkdown, provided a language-independent publishing system for creating:
 
@@ -101,18 +257,9 @@ By 2025, **webR** could compile R for WebAssembly, allowing R code to execute di
 
 ## R and Python
 
-The growth of Python has repeatedly led to predictions of R's decline.
+The growth of Python has repeatedly led to predictions of R's decline. In practice, modern data science increasingly combines the strengths of R and Python rather than treating them as competing languages. R remains particularly strong for statistical modelling and scientific communication, whereas Python dominates software engineering, machine learning deployment, and AI infrastructure.
 
-In practice, the two languages increasingly coexist. R remains particularly important in areas including:
-
-- statistics;
-- epidemiology;
-- biostatistics;
-- genomics;
-- scientific research;
-- data visualization.
-
-Python has a broader role in general-purpose programming, machine learning, deep learning, and AI engineering. Modern data-science workflows can use both languages rather than treating them as mutually exclusive alternatives.
+A detailed comparison of the two languages is available in the **[R vs Python](r-vs-python.qmd)** section.
 
 # Governance and sustainability
 
@@ -122,19 +269,29 @@ These include:
 
 - the **R Foundation** and **R Core Team**, which oversee the R language;
 - **CRAN**, which distributes R packages;
-- **Posit**, a private company that develops RStudio, Quarto, Shiny, and contributes to numerous open-source projects;
+- **Posit**, a private company that develops RStudio, Quarto, Shiny, Positron and contributes to numerous open-source projects;
 - independent package developers and community organizations.
 
 The distinction between the open-source language itself and companies that develop important tools around it is essential when considering the long-term sustainability of the ecosystem.
 
 # From RStudio to Positron
 
-In 2022, RStudio was rebranded as Posit. In 2023 they hired Wes McKinney, the creator of Python's *pandas*, and a month later laid off Yihui Xie, the creator of knitr and rmarkdown, the tools that made reproducible results in R possible.
+RStudio is an Integrated Development Environment (IDE), i.e. an interface that communicates with the language R with a lot of features that allow users flexibility and reproducibility.
 
-In 2025, Posit published RStudio's successor: Positron.
+In 2022, RStudio as a company was rebranded as Posit. In 2023 they hired Wes McKinney, the creator of Python's *pandas*, and a month later laid off Yihui Xie, the creator of knitr and rmarkdown, the tools that made reproducible results in R possible.
+
+In August 2025, Posit published RStudio's successor: Positron.
 
 # Sources and learning materials
 
 ## Videos
 
-- [*R: A Brief History*](https://www.youtube.com/watch?v=FjSPm1PB6Y0) — YouTube, accessed September 2026.
+- [AnalyticsWekk](https://www.youtube.com/watch?v=DsLXhjDYwFc)[@analyticsweek2014History]
+- [CodeSource](https://www.youtube.com/watch?v=FjSPm1PB6Y0) [@codesource2026Untold]
+- [Duke Centter for Computational Thinking](https://www.youtube.com/watch?v=IJc2J-qewiU) [@dukecenterforcomputationalthinking2022Whats]
+- [ModelCraft+](https://www.youtube.com/watch?v=v3gWERzot1k) [@modelcraft2026History]
+
+## References
+
+::: {#refs}
+:::

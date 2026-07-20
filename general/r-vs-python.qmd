@@ -8,15 +8,21 @@ R and Python are both open-source programming languages widely used in data
 science. Their capabilities overlap substantially, but they originated with
 different priorities and developed different ecosystems.
 
-| | R | Python |
-|---|---|---|
-| Primary origin | Statistical computing | General-purpose programming |
-| Data manipulation | Strong | Strong |
-| Statistical analysis | Particularly strong | Strong |
-| Data visualization | Particularly strong | Strong |
-| General software development | Possible, but less common | Major use case |
-| Machine learning | Strong | Particularly broad ecosystem |
-| Deep learning | Available | Dominant ecosystem |
+| Aspect                     | R                                                                       | Python                                                                              |
+| -------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **Original purpose**       | Designed for statistical computing and data analysis                    | Designed as a general-purpose programming language                                  |
+| **Programming philosophy** | Optimized for statistical thinking and interactive data exploration     | Optimized for software engineering and general application development              |
+| **Indexing**               | Starts counting from **1** (consistent with most mathematical notation) | Starts counting from **0** (common in computer science)                             |
+| **Primary users**          | Statisticians, epidemiologists, biologists, economists, data analysts   | Software engineers, machine learning engineers, AI developers, automation engineers |
+| **Data manipulation**      | Excellent (base R, dplyr, data.table)                                   | Excellent (pandas, Polars, NumPy)                                                   |
+| **Statistical analysis**   | Outstanding; includes many cutting-edge statistical methods             | Strong, but often relies on libraries developed after their R equivalents           |
+| **Data visualization**     | Outstanding (ggplot2, lattice, plotly)                                  | Strong (Matplotlib, Seaborn, Plotly, Altair)                                        |
+| **Machine learning**       | Strong (caret, tidymodels, mlr3)                                        | Outstanding ecosystem (scikit-learn, XGBoost, LightGBM, CatBoost)                   |
+| **Deep learning & AI**     | Available (keras, torch)                                                | Dominant ecosystem (PyTorch, TensorFlow, JAX, Hugging Face)                         |
+| **Software development**   | Possible, but not the primary design goal                               | One of Python's principal strengths                                                 |
+| **Deployment**             | Dashboards, reports and web apps (Shiny, Quarto, plumber)               | APIs, web services, cloud applications, AI systems                                  |
+| **Interoperability**       | Integrates with Python, SQL, C++, Java and JavaScript                   | Integrates with R, SQL, C/C++, Java and many other languages                        |
+
 
 # Different origins
 

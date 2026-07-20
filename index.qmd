@@ -2,11 +2,9 @@
 title: "Knowledge Base"
 ---
 
-# Welcome
+A practical overview of statistical concepts, methods and tools for epidemiology.
 
-This is my personal technical knowledge base.
-
-## Current topics
+## Topics
 
 - [R](r/index.qmd)
 - [Python](python/index.qmd)
