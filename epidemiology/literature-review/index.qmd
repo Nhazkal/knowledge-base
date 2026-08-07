@@ -1,0 +1,54 @@
+---
+title: "Literature Review"
+---
+
+# Overview
+
+## Scoping Reviews
+
+### Tricco et al. (2016)
+
+**A scoping review on the conduct and reporting of scoping reviews** [@tricco2016Scoping]
+
+- **Purpose:** Examine how scoping reviews were being conducted and reported, identify available reporting guidelines, and identify studies assessing reporting quality.
+- **Scope:** 516 articles were included, including 494 scoping reviews published between 1999 and 2014.
+- **Context:** The number of scoping reviews was rapidly increasing, but terminology, methodology, and reporting were inconsistent.
+- **Definition/purpose:** Scoping reviews provide a broad overview of the evidence on a topic and are particularly useful for mapping literature, clarifying concepts, examining emerging fields, and identifying evidence gaps.
+- **Scoping vs systematic reviews:** Scoping reviews generally address broader, exploratory questions, whereas systematic reviews address more specific questions based on predefined criteria.
+- **Methodological findings:** Conduct and reporting were highly variable. Only 13% reported an a priori protocol, 43% reported a predefined data charting form, and fewer than half presented a study flow diagram.
+- **Review process:** Independent duplicate review was also inconsistent across title/abstract screening, full-text screening, and data charting.
+- **Quality appraisal:** Most scoping reviews did not perform methodological quality appraisal; the authors note that this was consistent with contemporary scoping-review guidance.
+- **Typical outputs:** Scoping reviews most commonly identified evidence gaps (85%), future research opportunities (84%), and strengths and limitations of the literature (69%).
+- **Main conclusion:** Greater methodological standardization and improved reporting were needed, particularly through the development of a dedicated reporting guideline.
+
+### Arksey & O'Malley (2005)
+
+**Scoping studies: towards a methodological framework** [@arksey2005Scoping]
+
+- **Foundational paper** proposing an explicit methodological framework for
+  conducting scoping reviews.
+- **Purpose of scoping reviews:** map the extent, range and nature of research;
+  assess whether a systematic review is warranted; summarize/disseminate
+  findings; and identify research gaps.
+- **Five-stage framework:**
+  1. Identify the research question.
+  2. Identify relevant studies.
+  3. Select studies.
+  4. Chart the data.
+  5. Collate, summarize and report the results.
+- **Optional sixth component:** consultation with stakeholders to complement
+  and validate the literature findings.
+- **Key principle:** the process should be rigorous and transparent but also
+  iterative, allowing refinement as familiarity with the literature increases.
+- **Compared with systematic reviews:** scoping reviews generally address
+  broader questions, include diverse study designs, and (in this original
+  framework) do not formally assess study quality or determine the weight of
+  evidence.
+- **Important limitation:** broad coverage can come at the expense of depth,
+  and scoping reviews should not be considered an inherently quick or cheap
+  alternative to systematic reviews.
+
+## References
+
+::: {#refs}
+:::

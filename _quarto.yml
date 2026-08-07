@@ -11,6 +11,8 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Epidemiology"
+        href: epidemiology/index.qmd
       - text: "R"
         href: r/index.qmd
       - text: "Python"
