@@ -6,7 +6,8 @@ A practical overview of statistical concepts, methods and tools for epidemiology
 
 ## Topics
 
-- [R](r/index.qmd)
-- [Python](python/index.qmd)
+- [Epidemiology](epidemiology/index.qmd)
 - [Positron](positron/index.qmd)
+- [Python](python/index.qmd)
+- [R](r/index.qmd)
 - [General](general/index.qmd)
