@@ -259,7 +259,7 @@ By 2025, **webR** could compile R for WebAssembly, allowing R code to execute di
 
 The growth of Python has repeatedly led to predictions of R's decline. In practice, modern data science increasingly combines the strengths of R and Python rather than treating them as competing languages. R remains particularly strong for statistical modelling and scientific communication, whereas Python dominates software engineering, machine learning deployment, and AI infrastructure.
 
-A detailed comparison of the two languages is available in the **[R vs Python](r-vs-python.qmd)** section.
+A detailed comparison of the two languages is available in the **[R vs Python](../general/r-vs-python.qmd)** section.
 
 # Governance and sustainability
 
@@ -284,9 +284,18 @@ In August 2025, Posit published RStudio's successor: Positron.
 
 # Sources and learning materials
 
+## Free resources to learn R
+
+-	coursera
+-	EMC^2
+-	RStudio
+-	DataCamp (very good)
+-	Springer Series (online books)
+-	Quick-R
+
 ## Videos
 
-- [AnalyticsWekk](https://www.youtube.com/watch?v=DsLXhjDYwFc)[@analyticsweek2014History]
+- [AnalyticsWekk](https://www.youtube.com/watch?v=DsLXhjDYwFc) [@analyticsweek2014History]
 - [CodeSource](https://www.youtube.com/watch?v=FjSPm1PB6Y0) [@codesource2026Untold]
 - [Duke Centter for Computational Thinking](https://www.youtube.com/watch?v=IJc2J-qewiU) [@dukecenterforcomputationalthinking2022Whats]
 - [ModelCraft+](https://www.youtube.com/watch?v=v3gWERzot1k) [@modelcraft2026History]

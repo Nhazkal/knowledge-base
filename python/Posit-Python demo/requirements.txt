@@ -1,0 +1,5 @@
+plotnine
+polars
+pyarrow
+#Open an environment: uv venv
+#Then run: uv pip install plotnine polars

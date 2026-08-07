@@ -23,7 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -280,7 +334,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://github.com/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://nhazkal.github.io/knowledge-base/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -295,7 +349,76 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#positron" id="toc-positron" class="nav-link active" data-scroll-target="#positron">Positron</a></li>
+  <li><a href="#positron" id="toc-positron" class="nav-link active" data-scroll-target="#positron">Positron</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#the-data-science-workbench" id="toc-the-data-science-workbench" class="nav-link" data-scroll-target="#the-data-science-workbench">The Data Science Workbench</a>
+  <ul class="collapse">
+  <li><a href="#source-editor" id="toc-source-editor" class="nav-link" data-scroll-target="#source-editor">Source Editor</a></li>
+  <li><a href="#console" id="toc-console" class="nav-link" data-scroll-target="#console">Console</a></li>
+  <li><a href="#terminal" id="toc-terminal" class="nav-link" data-scroll-target="#terminal">Terminal</a></li>
+  <li><a href="#session-panes" id="toc-session-panes" class="nav-link" data-scroll-target="#session-panes">Session Panes</a></li>
+  </ul></li>
+  <li><a href="#workspaces-and-projects" id="toc-workspaces-and-projects" class="nav-link" data-scroll-target="#workspaces-and-projects">Workspaces and Projects</a></li>
+  <li><a href="#interpreter-management" id="toc-interpreter-management" class="nav-link" data-scroll-target="#interpreter-management">Interpreter Management</a></li>
+  <li><a href="#data-explorer" id="toc-data-explorer" class="nav-link" data-scroll-target="#data-explorer">Data Explorer</a>
+  <ul class="collapse">
+  <li><a href="#data-grid" id="toc-data-grid" class="nav-link" data-scroll-target="#data-grid">Data Grid</a></li>
+  <li><a href="#summary-panel" id="toc-summary-panel" class="nav-link" data-scroll-target="#summary-panel">Summary Panel</a></li>
+  <li><a href="#filter-bar" id="toc-filter-bar" class="nav-link" data-scroll-target="#filter-bar">Filter Bar</a></li>
+  </ul></li>
+  <li><a href="#how-code-is-executed-compilers-interpreters-and-runtimes" id="toc-how-code-is-executed-compilers-interpreters-and-runtimes" class="nav-link" data-scroll-target="#how-code-is-executed-compilers-interpreters-and-runtimes">How Code Is Executed: Compilers, Interpreters and Runtimes</a>
+  <ul class="collapse">
+  <li><a href="#compiled-languages" id="toc-compiled-languages" class="nav-link" data-scroll-target="#compiled-languages">Compiled Languages</a></li>
+  <li><a href="#interpreted-languages" id="toc-interpreted-languages" class="nav-link" data-scroll-target="#interpreted-languages">Interpreted Languages</a></li>
+  <li><a href="#hybrid-languages-bytecode-virtual-machines-and-jit-compilation" id="toc-hybrid-languages-bytecode-virtual-machines-and-jit-compilation" class="nav-link" data-scroll-target="#hybrid-languages-bytecode-virtual-machines-and-jit-compilation">Hybrid Languages: Bytecode, Virtual Machines and JIT Compilation</a></li>
+  <li><a href="#python-and-r-commonly-interpreted-internally-more-complex" id="toc-python-and-r-commonly-interpreted-internally-more-complex" class="nav-link" data-scroll-target="#python-and-r-commonly-interpreted-internally-more-complex">Python and R: Commonly Interpreted, Internally More Complex</a></li>
+  <li><a href="#language-implementation-and-execution-model" id="toc-language-implementation-and-execution-model" class="nav-link" data-scroll-target="#language-implementation-and-execution-model">Language, Implementation and Execution Model</a></li>
+  <li><a href="#runtime" id="toc-runtime" class="nav-link" data-scroll-target="#runtime">Runtime</a></li>
+  <li><a href="#kernel" id="toc-kernel" class="nav-link" data-scroll-target="#kernel">Kernel</a></li>
+  <li><a href="#where-does-sas-fit" id="toc-where-does-sas-fit" class="nav-link" data-scroll-target="#where-does-sas-fit">Where Does SAS Fit?</a></li>
+  <li><a href="#ide-interpreter-runtime-kernel-and-compiler" id="toc-ide-interpreter-runtime-kernel-and-compiler" class="nav-link" data-scroll-target="#ide-interpreter-runtime-kernel-and-compiler">IDE, Interpreter, Runtime, Kernel and Compiler</a></li>
+  <li><a href="#summary-of-execution-models" id="toc-summary-of-execution-models" class="nav-link" data-scroll-target="#summary-of-execution-models">Summary of Execution Models</a></li>
+  <li><a href="#why-this-matters-for-positron" id="toc-why-this-matters-for-positron" class="nav-link" data-scroll-target="#why-this-matters-for-positron">Why This Matters for Positron</a></li>
+  </ul></li>
+  <li><a href="#positron-architecture" id="toc-positron-architecture" class="nav-link" data-scroll-target="#positron-architecture">Positron Architecture</a>
+  <ul class="collapse">
+  <li><a href="#from-rstudio-to-a-polyglot-ide" id="toc-from-rstudio-to-a-polyglot-ide" class="nav-link" data-scroll-target="#from-rstudio-to-a-polyglot-ide">From RStudio to a Polyglot IDE</a></li>
+  </ul></li>
+  <li><a href="#ark-an-r-kernel" id="toc-ark-an-r-kernel" class="nav-link" data-scroll-target="#ark-an-r-kernel">Ark: An R Kernel</a></li>
+  <li><a href="#standard-communication-protocols" id="toc-standard-communication-protocols" class="nav-link" data-scroll-target="#standard-communication-protocols">Standard Communication Protocols</a>
+  <ul class="collapse">
+  <li><a href="#jupyter-protocol" id="toc-jupyter-protocol" class="nav-link" data-scroll-target="#jupyter-protocol">Jupyter Protocol</a></li>
+  <li><a href="#language-server-protocol" id="toc-language-server-protocol" class="nav-link" data-scroll-target="#language-server-protocol">Language Server Protocol</a></li>
+  <li><a href="#debug-adapter-protocol" id="toc-debug-adapter-protocol" class="nav-link" data-scroll-target="#debug-adapter-protocol">Debug Adapter Protocol</a></li>
+  </ul></li>
+  <li><a href="#tree-sitter-and-structural-code-analysis" id="toc-tree-sitter-and-structural-code-analysis" class="nav-link" data-scroll-target="#tree-sitter-and-structural-code-analysis">Tree-sitter and Structural Code Analysis</a></li>
+  <li><a href="#why-positron-is-not-just-a-vs-code-extension" id="toc-why-positron-is-not-just-a-vs-code-extension" class="nav-link" data-scroll-target="#why-positron-is-not-just-a-vs-code-extension">Why Positron Is Not Just a VS Code Extension</a></li>
+  <li><a href="#language-packs-and-session-isolation" id="toc-language-packs-and-session-isolation" class="nav-link" data-scroll-target="#language-packs-and-session-isolation">Language Packs and Session Isolation</a></li>
+  <li><a href="#extensions" id="toc-extensions" class="nav-link" data-scroll-target="#extensions">Extensions</a>
+  <ul class="collapse">
+  <li><a href="#example-todo-tree" id="toc-example-todo-tree" class="nav-link" data-scroll-target="#example-todo-tree">Example: Todo Tree</a></li>
+  </ul></li>
+  <li><a href="#command-palette" id="toc-command-palette" class="nav-link" data-scroll-target="#command-palette">Command Palette</a></li>
+  <li><a href="#user-interface" id="toc-user-interface" class="nav-link" data-scroll-target="#user-interface">User Interface</a>
+  <ul class="collapse">
+  <li><a href="#activity-bar" id="toc-activity-bar" class="nav-link" data-scroll-target="#activity-bar">Activity Bar</a></li>
+  <li><a href="#bottom-panel" id="toc-bottom-panel" class="nav-link" data-scroll-target="#bottom-panel">Bottom Panel</a></li>
+  </ul></li>
+  <li><a href="#help-and-code-intelligence" id="toc-help-and-code-intelligence" class="nav-link" data-scroll-target="#help-and-code-intelligence">Help and Code Intelligence</a>
+  <ul class="collapse">
+  <li><a href="#hover-documentation" id="toc-hover-documentation" class="nav-link" data-scroll-target="#hover-documentation">Hover Documentation</a></li>
+  <li><a href="#console-help" id="toc-console-help" class="nav-link" data-scroll-target="#console-help">Console Help</a></li>
+  <li><a href="#diagnostics" id="toc-diagnostics" class="nav-link" data-scroll-target="#diagnostics">Diagnostics</a></li>
+  </ul></li>
+  <li><a href="#larger-than-memory-data" id="toc-larger-than-memory-data" class="nav-link" data-scroll-target="#larger-than-memory-data">Larger-than-Memory Data</a></li>
+  <li><a href="#keyboard-shortcuts" id="toc-keyboard-shortcuts" class="nav-link" data-scroll-target="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+  <li><a href="#advantages" id="toc-advantages" class="nav-link" data-scroll-target="#advantages">Advantages</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
+  <li><a href="#videos" id="toc-videos" class="nav-link" data-scroll-target="#videos">Videos</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -324,9 +447,1097 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="positron" class="level1">
 <h1>Positron</h1>
-<p>Notes and reference material related to Positron.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><strong>Positron</strong> is a free, source-available integrated development environment (IDE) developed by Posit for data science. It is built on <strong>Code OSS</strong>, the open-source codebase underlying Microsoft Visual Studio Code, and is available for <strong>Windows</strong>, <strong>macOS</strong> and <strong>Linux</strong>. <span class="citation" data-cites="Positron Visual">(<a href="#ref-Positron" role="doc-biblioref">PBC 2026</a>; <a href="#ref-Visual" role="doc-biblioref">Microsoft 2026</a>)</span></p>
+<p>Positron combines:</p>
+<ul>
+<li>the data-science-oriented workflow of <strong>RStudio</strong>;</li>
+<li>the modern, extensible architecture of <strong>Visual Studio Code</strong>;</li>
+<li>first-class support for both <strong>R</strong> and <strong>Python</strong>;</li>
+<li>integrated tools for exploring data, plots, variables, notebooks and documentation.</li>
+</ul>
+<p>Positron is designed as a <strong>polyglot data science IDE</strong>. R and Python receive the deepest integration, while additional languages can be supported through compatible extensions.</p>
+<blockquote class="blockquote">
+<p><strong>Terminology note</strong></p>
+<p>Positron was initially described as open source during its development. Its desktop application is now distributed under the <strong>Elastic License 2.0</strong>, which is a source-available rather than an OSI-approved open-source licence. Several components, including Ark, remain available under permissive open-source licences.</p>
+</blockquote>
+<hr>
+</section>
+<section id="the-data-science-workbench" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-science-workbench">The Data Science Workbench</h2>
+<p>Positron organizes the data science workflow around four complementary areas:</p>
+<ol type="1">
+<li>the <strong>source file</strong> in which code is written;</li>
+<li>the <strong>console</strong> in which code is executed interactively;</li>
+<li>the <strong>terminal</strong>, which provides a sandbox for development and access to the operating system;</li>
+<li>supporting panes used to understand the current session, including variables, data, plots, help and connections.</li>
+</ol>
+<p>This layout resembles the familiar four-pane workflow of RStudio, but it is implemented using the more flexible workbench architecture inherited from Code OSS.</p>
+<section id="source-editor" class="level3">
+<h3 class="anchored" data-anchor-id="source-editor">Source Editor</h3>
+<p>The editor is used to work with:</p>
+<ul>
+<li>R and Python scripts;</li>
+<li>Quarto documents;</li>
+<li>Jupyter notebooks;</li>
+<li>configuration files;</li>
+<li>documentation;</li>
+<li>files from many other programming languages.</li>
+</ul>
+</section>
+<section id="console" class="level3">
+<h3 class="anchored" data-anchor-id="console">Console</h3>
+<p>The <strong>Console</strong> communicates with the active R or Python session. It is intended for interactive execution, inspection and experimentation.</p>
+</section>
+<section id="terminal" class="level3">
+<h3 class="anchored" data-anchor-id="terminal">Terminal</h3>
+<p>The <strong>Terminal</strong> communicates with the operating system shell rather than with R or Python directly. It can be used to:</p>
+<ul>
+<li>run command-line programs;</li>
+<li>manage files;</li>
+<li>use Git;</li>
+<li>install packages;</li>
+<li>create or activate environments;</li>
+<li>render Quarto projects;</li>
+<li>run development tools.</li>
+</ul>
+</section>
+<section id="session-panes" class="level3">
+<h3 class="anchored" data-anchor-id="session-panes">Session Panes</h3>
+<p>Positron includes panes for inspecting the state and output of the active session, including:</p>
+<ul>
+<li><strong>Variables</strong>;</li>
+<li><strong>Data Explorer</strong>;</li>
+<li><strong>Plots</strong>;</li>
+<li><strong>Help</strong>;</li>
+<li><strong>Connections</strong>;</li>
+<li><strong>Problems</strong>;</li>
+<li><strong>Output</strong>;</li>
+<li><strong>Debug Console</strong>.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="workspaces-and-projects" class="level2">
+<h2 class="anchored" data-anchor-id="workspaces-and-projects">Workspaces and Projects</h2>
+<p>Opening a folder in Positron creates a <strong>workspace</strong>, which becomes the current context for the project.</p>
+<p>Conceptually, this resembles opening an <strong>RStudio Project</strong>: the files, workspace-specific settings, source-control information and interpreter selection become associated with the folder.</p>
+<p>A workspace is not itself the same thing as a working directory. The effective working directory can depend on the active interpreter, terminal, file or execution context.</p>
+<p>Workspace-specific settings allow Positron to remember information such as the interpreter or environment used for a particular project.</p>
+<hr>
+</section>
+<section id="interpreter-management" class="level2">
+<h2 class="anchored" data-anchor-id="interpreter-management">Interpreter Management</h2>
+<p>A frequent difficulty in Python development is determining:</p>
+<ul>
+<li>which Python installation is running;</li>
+<li>which virtual environment is active;</li>
+<li>where that environment is located;</li>
+<li>whether the correct dependencies are installed;</li>
+<li>whether the project will reopen with the same environment later.</li>
+</ul>
+<p>Positron’s <strong>Interpreter Selector</strong> discovers available R and Python installations and allows the active interpreter to be changed from the interface.</p>
+<p>For Python, this can include environments managed with tools such as:</p>
+<ul>
+<li><code>venv</code>;</li>
+<li>Conda;</li>
+<li>Poetry;</li>
+<li>pyenv;</li>
+<li>uv;</li>
+<li>other discoverable Python installations.</li>
+</ul>
+<p>Positron remembers interpreter selections at the workspace level and can reactivate the corresponding environment when the project is reopened.</p>
+<p>The same general mechanism can be used to switch between different versions or installations of R.</p>
+<hr>
+</section>
+<section id="data-explorer" class="level2">
+<h2 class="anchored" data-anchor-id="data-explorer">Data Explorer</h2>
+<p>The <strong>Data Explorer</strong> is a language-independent interface for examining tabular data held in an active R or Python session or stored in supported files.</p>
+<p>It supports common in-memory dataframe implementations, including:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>R</th>
+<th>Python</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>data.frame</code></td>
+<td>pandas</td>
+</tr>
+<tr class="even">
+<td>tibble</td>
+<td>Polars</td>
+</tr>
+<tr class="odd">
+<td><code>data.table</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Its interface contains three main components.</p>
+<section id="data-grid" class="level3">
+<h3 class="anchored" data-anchor-id="data-grid">Data Grid</h3>
+<p>The data grid displays individual rows, columns and cells in a spreadsheet-like view. It supports interactive sorting, navigation and inspection.</p>
+</section>
+<section id="summary-panel" class="level3">
+<h3 class="anchored" data-anchor-id="summary-panel">Summary Panel</h3>
+<p>The summary panel provides information about each variable, including:</p>
+<ul>
+<li>column name;</li>
+<li>data type;</li>
+<li>missing data;</li>
+<li>distributions or frequency summaries;</li>
+<li>selected descriptive statistics.</li>
+</ul>
+<p>This makes it possible to obtain a rapid overview of a dataset without first writing a separate summary command.</p>
+</section>
+<section id="filter-bar" class="level3">
+<h3 class="anchored" data-anchor-id="filter-bar">Filter Bar</h3>
+<p>The filter bar allows filters to be created, displayed, modified and removed interactively.</p>
+<p>Interactive filters and sorts can be translated into reproducible code appropriate for the dataframe type. For example, an R dataframe or tibble can produce <strong>dplyr</strong> code, whereas pandas and Polars objects produce corresponding Python code.</p>
+<blockquote class="blockquote">
+<p>The Data Explorer complements rather than replaces code-based analysis. Interactive exploration can be used to understand the data before the relevant operations are recorded in reproducible source code.</p>
+</blockquote>
+<hr>
+<hr>
+</section>
+</section>
+<section id="how-code-is-executed-compilers-interpreters-and-runtimes" class="level2">
+<h2 class="anchored" data-anchor-id="how-code-is-executed-compilers-interpreters-and-runtimes">How Code Is Executed: Compilers, Interpreters and Runtimes</h2>
+<p>Before a program can run, the computer must ultimately execute <strong>machine code</strong>: binary instructions understood by the processor. Human-readable source code must therefore be translated into machine instructions in one way or another.</p>
+<p>Three broad execution models are commonly used:</p>
+<ol type="1">
+<li><strong>ahead-of-time compilation</strong>;</li>
+<li><strong>interpretation</strong>;</li>
+<li><strong>hybrid execution using bytecode, a virtual machine or Just-In-Time compilation</strong>.</li>
+</ol>
+<p>These categories are useful conceptual models rather than rigid properties of a programming language. A language specification does not necessarily require one execution strategy, and different implementations of the same language can use different combinations of compilation and interpretation.</p>
+<section id="compiled-languages" class="level3">
+<h3 class="anchored" data-anchor-id="compiled-languages">Compiled Languages</h3>
+<p>A <strong>compiler</strong> translates source code into machine code, or into another lower-level representation, before the resulting program is executed.</p>
+<p>The conventional ahead-of-time model is:</p>
+<pre class="text"><code>Source code
+     │
+     ▼
+ Compiler
+     │
+     ▼
+Executable containing machine code
+     │
+     ▼
+Operating system loads the executable
+     │
+     ▼
+CPU executes its instructions</code></pre>
+<p>The resulting executable can normally be run without distributing the original source code or requiring the compiler that created it. It may still depend on operating-system services, runtime libraries or dynamically linked libraries.</p>
+<p><strong>Advantages</strong></p>
+<ul>
+<li>excellent runtime performance;</li>
+<li>extensive optimization before execution;</li>
+<li>the compiler can generate instructions tailored to a target processor and operating system;</li>
+<li>the original source code does not have to be distributed with the executable.</li>
+</ul>
+<p><strong>Disadvantages</strong></p>
+<ul>
+<li>the program generally must be compiled separately for different operating systems and processor architectures;</li>
+<li>compilation adds an explicit build step;</li>
+<li>changes to the source code require the relevant program or library to be rebuilt;</li>
+<li>debugging can involve a distinction between the source code and the optimized machine code actually being executed.</li>
+</ul>
+<p>Languages commonly associated with ahead-of-time compilation include:</p>
+<ul>
+<li>C;</li>
+<li>C++;</li>
+<li>Objective-C;</li>
+<li>Rust;</li>
+<li>Go.</li>
+</ul>
+<p>Compiled programs are not necessarily completely self-contained. For example, a compiled C++ application may depend on shared libraries supplied with the operating system or installed separately.</p>
+</section>
+<section id="interpreted-languages" class="level3">
+<h3 class="anchored" data-anchor-id="interpreted-languages">Interpreted Languages</h3>
+<p>In the simplest interpreted model, an <strong>interpreter</strong> reads source code or an internal representation of that code and evaluates it while the program is running rather than first creating a standalone native executable.</p>
+<pre class="text"><code>Source code
+     │
+     ▼
+Interpreter / language runtime
+     │
+     ▼
+Instructions are evaluated during execution
+     │
+     ▼
+Results are returned</code></pre>
+<p>The interpreter is itself a compiled program that ultimately runs as machine code. What is described as “interpreted” is the user’s program: it is submitted to a running language implementation rather than distributed primarily as a native executable.</p>
+<p>The source code, or a representation derived from it, is therefore used together with an appropriate interpreter or runtime on the destination computer.</p>
+<p><strong>Advantages</strong></p>
+<ul>
+<li>highly interactive workflow;</li>
+<li>no separate manual compilation step is usually required;</li>
+<li>code can be executed incrementally;</li>
+<li>experimentation, inspection and debugging are convenient;</li>
+<li>the same source code can often run on multiple platforms when a compatible interpreter is available.</li>
+</ul>
+<p><strong>Disadvantages</strong></p>
+<ul>
+<li>execution may be slower than optimized ahead-of-time machine code;</li>
+<li>an appropriate interpreter or runtime must be available;</li>
+<li>errors may only become visible when the affected code is parsed or executed;</li>
+<li>distributing source code can expose implementation details.</li>
+</ul>
+<p>Languages and environments commonly experienced as interpreted include:</p>
+<ul>
+<li>Bash and other shell languages;</li>
+<li>PHP;</li>
+<li>R;</li>
+<li>Python;</li>
+<li>JavaScript used interactively in a browser or another runtime.</li>
+</ul>
+<p>JavaScript illustrates why these categories are not absolute. It is experienced as an interpreted language, but modern JavaScript engines usually combine parsing, interpretation and Just-In-Time compilation internally.</p>
+</section>
+<section id="hybrid-languages-bytecode-virtual-machines-and-jit-compilation" class="level3">
+<h3 class="anchored" data-anchor-id="hybrid-languages-bytecode-virtual-machines-and-jit-compilation">Hybrid Languages: Bytecode, Virtual Machines and JIT Compilation</h3>
+<p>Many modern language implementations combine compilation and interpretation.</p>
+<p>Instead of compiling source code directly into a platform-specific executable, the implementation may first translate it into an <strong>intermediate representation</strong>, often called <strong>bytecode</strong>.</p>
+<pre class="text"><code>Source code
+     │
+     ▼
+Compiler or bytecode compiler
+     │
+     ▼
+Intermediate representation / bytecode
+     │
+     ▼
+Virtual machine or runtime
+     │
+     ├── interprets bytecode
+     │
+     └── may JIT-compile selected code
+     ▼
+Native machine instructions
+     │
+     ▼
+CPU</code></pre>
+<p>A <strong>virtual machine</strong> provides an abstract execution environment. The same bytecode can be distributed across platforms as long as each platform has a compatible virtual machine.</p>
+<p>A <strong>Just-In-Time (JIT) compiler</strong> translates code into native machine instructions while the program is running. It can identify frequently executed sections and optimize them using information that is only available at runtime.</p>
+<p>This approach can combine several benefits:</p>
+<ul>
+<li>platform-independent distribution;</li>
+<li>interactive or dynamic execution;</li>
+<li>better runtime performance than a purely interpreted implementation;</li>
+<li>runtime optimization based on the program’s actual behaviour.</li>
+</ul>
+<p>Common examples include:</p>
+<ul>
+<li>Java source compiled into Java bytecode and executed by the Java Virtual Machine;</li>
+<li>C# and other .NET languages compiled into Common Intermediate Language and executed by the .NET runtime;</li>
+<li>JavaScript engines that interpret code initially and JIT-compile frequently executed paths.</li>
+</ul>
+</section>
+<section id="python-and-r-commonly-interpreted-internally-more-complex" class="level3">
+<h3 class="anchored" data-anchor-id="python-and-r-commonly-interpreted-internally-more-complex">Python and R: Commonly Interpreted, Internally More Complex</h3>
+<p>Python and R are commonly described as <strong>interpreted languages</strong> because programmers normally submit source code to a running language session rather than compiling a standalone executable before each analysis.</p>
+<p>That description is useful at the level of the user experience, but their implementations perform additional internal transformations.</p>
+<section id="python" class="level4">
+<h4 class="anchored" data-anchor-id="python">Python</h4>
+<p>The most widely used Python implementation is <strong>CPython</strong>.</p>
+<p>CPython generally:</p>
+<ol type="1">
+<li>parses Python source code;</li>
+<li>compiles it into Python bytecode;</li>
+<li>executes that bytecode in the CPython virtual machine.</li>
+</ol>
+<pre class="text"><code>Python source
+     │
+     ▼
+Parser and compiler
+     │
+     ▼
+Python bytecode
+     │
+     ▼
+CPython virtual machine
+     │
+     ▼
+Underlying native operations</code></pre>
+<p>Bytecode may be cached in <code>.pyc</code> files, but these files are not standalone native executables. They still require a compatible Python runtime.</p>
+<p>Other Python implementations can use different strategies. For example, PyPy includes a tracing JIT compiler, while tools such as Cython, Nuitka and Numba can compile particular kinds of Python code more directly.</p>
+</section>
+<section id="r" class="level4">
+<h4 class="anchored" data-anchor-id="r">R</h4>
+<p>GNU R generally:</p>
+<ol type="1">
+<li>parses R source code into internal expression objects;</li>
+<li>evaluates those expressions within an R session;</li>
+<li>may byte-compile functions or expressions through R’s compiler infrastructure;</li>
+<li>calls compiled C, C++ or Fortran routines for many computationally intensive operations.</li>
+</ol>
+<pre class="text"><code>R source
+     │
+     ▼
+R parser
+     │
+     ▼
+Expression objects
+     │
+     ├── evaluated by the R runtime
+     │
+     └── may be byte-compiled
+     ▼
+R operations and compiled native routines</code></pre>
+<p>The base <code>compiler</code> package can byte-compile R functions, and GNU R can use Just-In-Time byte compilation. Nevertheless, R remains an interactive language from the programmer’s perspective because these internal steps occur automatically inside the running R session.</p>
+<p>R packages also frequently contain compiled C, C++ or Fortran code. Consequently, an R analysis may combine interpreted R expressions, byte-compiled R functions and native compiled libraries within a single workflow.</p>
+</section>
+</section>
+<section id="language-implementation-and-execution-model" class="level3">
+<h3 class="anchored" data-anchor-id="language-implementation-and-execution-model">Language, Implementation and Execution Model</h3>
+<p>It is useful to distinguish a <strong>programming language</strong> from a particular <strong>implementation</strong> of that language.</p>
+<p>For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Language</th>
+<th>Example implementation</th>
+<th>Possible execution strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Python</td>
+<td>CPython</td>
+<td>Bytecode executed by a virtual machine</td>
+</tr>
+<tr class="even">
+<td>Python</td>
+<td>PyPy</td>
+<td>Bytecode plus JIT compilation</td>
+</tr>
+<tr class="odd">
+<td>R</td>
+<td>GNU R</td>
+<td>Expression evaluation plus optional byte compilation</td>
+</tr>
+<tr class="even">
+<td>JavaScript</td>
+<td>V8</td>
+<td>Interpretation plus JIT compilation</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>GCC or Clang toolchain</td>
+<td>Ahead-of-time native compilation</td>
+</tr>
+</tbody>
+</table>
+<p>A statement such as “Python is interpreted” is therefore a convenient description of the usual workflow, not a complete description of every Python implementation.</p>
+</section>
+<section id="runtime" class="level3">
+<h3 class="anchored" data-anchor-id="runtime">Runtime</h3>
+<p>A <strong>runtime</strong> is the software environment responsible for supporting a program while it executes.</p>
+<p>Depending on the language, the runtime may:</p>
+<ul>
+<li>load and evaluate code;</li>
+<li>manage memory;</li>
+<li>provide built-in objects and functions;</li>
+<li>handle errors and exceptions;</li>
+<li>execute bytecode;</li>
+<li>coordinate garbage collection;</li>
+<li>load libraries and packages;</li>
+<li>communicate with the operating system;</li>
+<li>call compiled native routines;</li>
+<li>maintain the state of an interactive session.</li>
+</ul>
+<p>For ahead-of-time compiled languages, the runtime may be relatively limited or partly linked into the executable. For interpreted and hybrid languages, the runtime is usually a prominent part of the execution system.</p>
+<p>Examples include:</p>
+<ul>
+<li>the GNU R runtime;</li>
+<li>the CPython runtime;</li>
+<li>the Java Virtual Machine;</li>
+<li>the .NET Common Language Runtime;</li>
+<li>a JavaScript engine such as V8.</li>
+</ul>
+<p>An <strong>interpreter</strong> and a <strong>runtime</strong> overlap, but the terms emphasize different things. The interpreter evaluates program instructions, whereas the runtime is the broader environment that supports the entire execution process.</p>
+</section>
+<section id="kernel" class="level3">
+<h3 class="anchored" data-anchor-id="kernel">Kernel</h3>
+<p>A <strong>kernel</strong>, in the IDE and notebook context, is not the same thing as either an interpreter or an operating-system kernel.</p>
+<p>It is a communication layer through which a front end can interact with a language runtime.</p>
+<p>A kernel can receive requests such as:</p>
+<ul>
+<li>execute this code;</li>
+<li>interrupt or restart the session;</li>
+<li>return text output;</li>
+<li>display a plot;</li>
+<li>report variables;</li>
+<li>provide completion candidates;</li>
+<li>return contextual information.</li>
+</ul>
+<p>It forwards the appropriate operations to the language runtime and sends structured results back to the front end.</p>
+<pre class="text"><code>IDE or notebook front end
+          │
+          │ protocol requests
+          ▼
+        Kernel
+          │
+          │ language-specific operations
+          ▼
+ Interpreter / language runtime
+          │
+          ▼
+        Results
+          │
+          └──────────────► returned to the front end</code></pre>
+<p>The kernel is therefore an <strong>intermediary</strong>, not the component that defines the language or replaces its runtime.</p>
+<p>For R in Positron, this role is performed by <strong>Ark</strong>.</p>
+</section>
+<section id="where-does-sas-fit" class="level3">
+<h3 class="anchored" data-anchor-id="where-does-sas-fit">Where Does SAS Fit?</h3>
+<p>SAS is illuminating because it combines layers that are more visibly separated in the R ecosystem.</p>
+<p><strong>SAS</strong> can refer both to the SAS programming language and to the broader proprietary <strong>SAS System</strong> that parses, compiles, executes and manages SAS programs. Its language, execution engine, analytical procedures, development environments and commercial modules have historically been developed and distributed as an integrated platform by one vendor.</p>
+<p>A SAS program is commonly organized into <strong>DATA steps</strong> and <strong>PROC steps</strong>. SAS processes these steps internally: it compiles the current step into an executable form, executes it and then proceeds to the next step. This internal compilation does not normally produce a standalone executable that users distribute in the manner of a C or Rust program.</p>
+<pre class="text"><code>SAS program
+     │
+     ▼
+SAS System
+     │
+     ├── compiles and executes DATA steps
+     ├── invokes PROC implementations
+     ├── manages SAS libraries and metadata
+     └── returns logs, listings, tables and other output</code></pre>
+<p>R separates these layers more visibly:</p>
+<pre class="text"><code>R source code
+     │
+     ▼
+GNU R runtime
+     │
+     ├── evaluates R expressions
+     ├── loads packages
+     └── calls compiled libraries
+     │
+     ▼
+Results displayed by an interface
+such as Positron, RStudio or a terminal</code></pre>
+<p>This is why a direct comparison between “SAS” and “R” can be ambiguous. SAS often denotes an integrated commercial ecosystem, whereas R denotes primarily a programming language and its principal runtime implementation.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>SAS ecosystem</th>
+<th>R and Posit ecosystem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programming language</td>
+<td>SAS language</td>
+<td>R language</td>
+</tr>
+<tr class="even">
+<td>Execution environment</td>
+<td>SAS System</td>
+<td>GNU R</td>
+</tr>
+<tr class="odd">
+<td>Development interfaces</td>
+<td>SAS Studio, SAS Enterprise Guide, Display Manager and others</td>
+<td>Positron, RStudio, VS Code, terminal and others</td>
+</tr>
+<tr class="even">
+<td>Analytical functionality</td>
+<td>Base SAS and licensed SAS products or modules</td>
+<td>Base R and packages from CRAN, Bioconductor, GitHub and other repositories</td>
+</tr>
+<tr class="odd">
+<td>Architecture</td>
+<td>Historically integrated and vendor-controlled</td>
+<td>Language, runtime, packages and IDE can evolve separately</td>
+</tr>
+<tr class="even">
+<td>Distribution model</td>
+<td>Proprietary commercial platform</td>
+<td>R is free and open source; individual interfaces and services have their own licences</td>
+</tr>
+</tbody>
+</table>
+<p>Neither model means that the IDE itself performs all calculations. SAS development interfaces send work to the SAS execution environment, just as Positron sends R code to an independent R session. The major difference is how visibly and independently the layers are packaged, licensed and extended.</p>
+</section>
+<section id="ide-interpreter-runtime-kernel-and-compiler" class="level3">
+<h3 class="anchored" data-anchor-id="ide-interpreter-runtime-kernel-and-compiler">IDE, Interpreter, Runtime, Kernel and Compiler</h3>
+<p>The complete set of components can now be distinguished.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Principal role</th>
+<th>Example in the present context</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Programming language</strong></td>
+<td>Defines the syntax and semantics in which programs are expressed.</td>
+<td>R, Python, SAS, C++</td>
+</tr>
+<tr class="even">
+<td><strong>Compiler</strong></td>
+<td>Translates source code into machine code, bytecode or another intermediate representation.</td>
+<td>GCC, Clang, the CPython bytecode compiler, R’s compiler infrastructure</td>
+</tr>
+<tr class="odd">
+<td><strong>Interpreter</strong></td>
+<td>Evaluates program instructions during a running session.</td>
+<td>GNU R evaluator, CPython interpreter</td>
+</tr>
+<tr class="even">
+<td><strong>Runtime</strong></td>
+<td>Provides the broader environment and services required while a program executes.</td>
+<td>GNU R, CPython, JVM, SAS System</td>
+</tr>
+<tr class="odd">
+<td><strong>Kernel</strong></td>
+<td>Exposes a protocol-based interface between a front end and a language runtime.</td>
+<td>Ark for R</td>
+</tr>
+<tr class="even">
+<td><strong>IDE</strong></td>
+<td>Provides the editor, interface, debugging tools, project management and visual panes.</td>
+<td>Positron</td>
+</tr>
+<tr class="odd">
+<td><strong>Analytical ecosystem</strong></td>
+<td>Combines languages, libraries, tools, interfaces and distribution systems.</td>
+<td>R/CRAN/Posit ecosystem or the SAS platform</td>
+</tr>
+</tbody>
+</table>
+<p>Positron is the <strong>IDE</strong>. It does not itself perform the language-level evaluation of R or Python code.</p>
+<p>When code is executed, Positron sends a request to the active language session. A kernel and associated language services mediate the communication, the interpreter or runtime evaluates the code, and the results are returned to Positron for display in the Console, Plots pane, Variables pane, Data Explorer or another appropriate interface.</p>
+</section>
+<section id="summary-of-execution-models" class="level3">
+<h3 class="anchored" data-anchor-id="summary-of-execution-models">Summary of Execution Models</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Approach</th>
+<th>Main translation path</th>
+<th>Typical performance</th>
+<th>Portability</th>
+<th>Common examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ahead-of-time compiled</td>
+<td>Source → native machine code before execution</td>
+<td>Usually highest</td>
+<td>Native executable is platform-specific</td>
+<td>C, C++, Rust, Go</td>
+</tr>
+<tr class="even">
+<td>Interpreted</td>
+<td>Source or internal representation evaluated by a running interpreter</td>
+<td>Usually lower, but implementation-dependent</td>
+<td>High when a compatible runtime exists</td>
+<td>Bash, PHP, interactive R and Python workflows</td>
+</tr>
+<tr class="odd">
+<td>Hybrid</td>
+<td>Source → bytecode or intermediate representation → virtual machine and possibly JIT compilation</td>
+<td>Often high after runtime optimization</td>
+<td>High when a compatible virtual machine exists</td>
+<td>Java, C#, modern JavaScript engines</td>
+</tr>
+<tr class="even">
+<td>Integrated analytical platform</td>
+<td>Source submitted to a managed execution system that compiles or interprets internal units of work</td>
+<td>Depends on the engine and procedure</td>
+<td>Depends on the platform</td>
+<td>SAS</td>
+</tr>
+</tbody>
+</table>
+<p>Python and R are commonly referred to as interpreted languages because that describes how programmers normally use them, even though their implementations may parse, compile, byte-compile or delegate work to native machine-code libraries internally.</p>
+</section>
+<section id="why-this-matters-for-positron" class="level3">
+<h3 class="anchored" data-anchor-id="why-this-matters-for-positron">Why This Matters for Positron</h3>
+<p>This distinction explains what happens when code is submitted from Positron.</p>
+<pre class="text"><code>User writes R code
+        │
+        ▼
+Positron editor or Console
+        │
+        ▼
+Ark receives the execution request
+        │
+        ▼
+GNU R parses and evaluates the code
+        │
+        ├── may execute byte-compiled R
+        └── may call compiled C, C++ or Fortran routines
+        ▼
+Ark returns output and session information
+        │
+        ▼
+Positron displays the result</code></pre>
+<p>Positron does not replace R, Python or their runtimes. It provides a common workbench from which independent language sessions can be selected, controlled and inspected.</p>
+<p>Understanding these layers also explains why Positron can remain open when an R session crashes, why several language versions can be selected, why Ark exists, and why standardized protocols are central to a polyglot IDE.</p>
+<hr>
+</section>
+</section>
+<section id="positron-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="positron-architecture">Positron Architecture</h2>
+<section id="from-rstudio-to-a-polyglot-ide" class="level3">
+<h3 class="anchored" data-anchor-id="from-rstudio-to-a-polyglot-ide">From RStudio to a Polyglot IDE</h3>
+<p>RStudio was historically organized around an R session that was deeply integrated with the IDE. This architecture provided an excellent R experience, but many IDE operations depended on the same R process. When R was busy or crashed, parts of the interface could become unavailable or the entire session could be disrupted.</p>
+<p>Python support in RStudio was consequently integrated largely through the R-centred application architecture.</p>
+<p>Positron instead separates the IDE workbench from the language sessions. The interface runs independently, while R and Python operate in isolated sessions that communicate with the IDE through defined protocols.</p>
+<pre class="text"><code>                       User
+                         │
+                         ▼
+                Positron workbench
+                    (Code OSS)
+                         │
+          ┌──────────────┴──────────────┐
+          ▼                             ▼
+       R session                    Python session
+         Ark                    Python kernel/tools
+          │                             │
+          └──────────────┬──────────────┘
+                         ▼
+                Results returned to
+          Console, Plots, Variables, Help,
+            Data Explorer and Debugger</code></pre>
+<p>This architecture has several consequences:</p>
+<ul>
+<li>the IDE is not tied to one programming language;</li>
+<li>R and Python can be treated as first-class languages;</li>
+<li>an interpreter session can restart without necessarily crashing the workbench;</li>
+<li>language tooling can be developed and updated independently;</li>
+<li>standard protocols can connect multiple front ends and back ends.</li>
+</ul>
+<p>Only the objects stored in the failed session’s memory are lost when a language session crashes; source files and the IDE itself remain available.</p>
+<hr>
+</section>
+</section>
+<section id="ark-an-r-kernel" class="level2">
+<h2 class="anchored" data-anchor-id="ark-an-r-kernel">Ark: An R Kernel</h2>
+<p><strong>Ark</strong> is Posit’s modern R kernel and language-services framework. It was developed through collaboration between the Positron and tidyverse teams.</p>
+<p>Ark is responsible for much of the R-specific experience in Positron, including:</p>
+<ul>
+<li>executing R code;</li>
+<li>returning console output;</li>
+<li>providing code completions;</li>
+<li>reporting diagnostics;</li>
+<li>displaying contextual help;</li>
+<li>supporting debugging;</li>
+<li>communicating information about variables, plots and the active session.</li>
+</ul>
+<p>Ark acts as an intermediary between the Positron interface and the R interpreter.</p>
+<pre class="text"><code>Positron sends a request
+          │
+          ▼
+      Ark receives it
+          │
+          ▼
+   R evaluates the code
+          │
+          ▼
+ Ark returns a response
+          │
+          ▼
+Positron displays the result</code></pre>
+<p>Ark is not merely a collection of Positron-specific commands. It implements standard communication protocols that can, in principle, be used by other compatible front ends.</p>
+<hr>
+</section>
+<section id="standard-communication-protocols" class="level2">
+<h2 class="anchored" data-anchor-id="standard-communication-protocols">Standard Communication Protocols</h2>
+<p>Positron’s architecture relies on standard protocols for different categories of IDE functionality.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Functionality</th>
+<th>Protocol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Code execution and results</td>
+<td><strong>Jupyter Protocol</strong></td>
+</tr>
+<tr class="even">
+<td>Completions, diagnostics and contextual help</td>
+<td><strong>Language Server Protocol</strong></td>
+</tr>
+<tr class="odd">
+<td>Debugging</td>
+<td><strong>Debug Adapter Protocol</strong></td>
+</tr>
+</tbody>
+</table>
+<p>These protocols define standardized forms of requests and responses. The front end does not need to know every internal detail of the language implementation; it only needs to communicate using the agreed protocol.</p>
+<section id="jupyter-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="jupyter-protocol">Jupyter Protocol</h3>
+<p>The name <strong>Jupyter</strong> originated from <strong>Julia</strong>, <strong>Python</strong> and <strong>R</strong>, although the protocol now supports many languages.</p>
+<p>A Jupyter front end communicates with a language-specific back end called a <strong>kernel</strong>. For example:</p>
+<ol type="1">
+<li>the front end sends an execution request;</li>
+<li>the kernel evaluates the code;</li>
+<li>the kernel sends an execution response;</li>
+<li>the front end displays the output.</li>
+</ol>
+<p>Ark is a Jupyter kernel for R. When R code is run in Positron, Positron can send an execution request through the Jupyter protocol and Ark returns the resulting output.</p>
+</section>
+<section id="language-server-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="language-server-protocol">Language Server Protocol</h3>
+<p>The <strong>Language Server Protocol</strong> (LSP) standardizes communication for code-intelligence features such as:</p>
+<ul>
+<li>completions;</li>
+<li>diagnostics;</li>
+<li>hover documentation;</li>
+<li>function signatures;</li>
+<li>navigation to definitions;</li>
+<li>references and symbols.</li>
+</ul>
+<p>For example, when the pointer hovers over an R function, Positron sends a hover request. Ark analyzes the relevant code and returns the information that Positron displays in the editor.</p>
+<p>Because the request format is standardized, the language server and the editor can be developed relatively independently.</p>
+</section>
+<section id="debug-adapter-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="debug-adapter-protocol">Debug Adapter Protocol</h3>
+<p>The <strong>Debug Adapter Protocol</strong> (DAP) performs a similar role for debugging. It standardizes operations such as:</p>
+<ul>
+<li>starting or attaching to a debugging session;</li>
+<li>setting breakpoints;</li>
+<li>stepping into or over code;</li>
+<li>inspecting variables;</li>
+<li>displaying the call stack.</li>
+</ul>
+<p>The posit::conf(2024) presentation demonstrated how compatible debug adapters can support movement across language boundaries, such as stepping from R code into compiled C or C++ code used by an R package. This is an advanced capability rather than a requirement of ordinary R debugging.</p>
+<hr>
+</section>
+</section>
+<section id="tree-sitter-and-structural-code-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="tree-sitter-and-structural-code-analysis">Tree-sitter and Structural Code Analysis</h2>
+<p>Ark uses <strong>tree-sitter</strong> to parse R source code.</p>
+<p>A parser does not treat a program as an undifferentiated string of characters. It converts the source code into a structured representation, often called a <strong>syntax tree</strong>, that identifies meaningful components such as:</p>
+<ul>
+<li>function calls;</li>
+<li>arguments;</li>
+<li>assignments;</li>
+<li>expressions;</li>
+<li>operators;</li>
+<li>blocks;</li>
+<li>symbols.</li>
+</ul>
+<pre class="text"><code>R source code
+     │
+     ▼
+ tree-sitter parser
+     │
+     ▼
+Structured syntax tree
+     │
+     ├── diagnostics
+     ├── completions
+     ├── syntax highlighting
+     ├── indentation
+     ├── navigation
+     └── contextual assistance</code></pre>
+<p>Tree-sitter is language-independent, but each language requires a grammar that defines its syntax. The Positron and Ark teams developed an R grammar for tree-sitter because an adequate grammar was not previously available for their requirements.</p>
+<p>That grammar is not limited to Positron. Other tools and editors that support tree-sitter, such as Zed or Neovim, can also use it for features such as syntax highlighting and indentation.</p>
+<p>Structural parsing can also support code-search and navigation systems. The presentation used GitHub’s code search as an example: syntax-aware indexing can make it possible to locate a symbol and navigate to its definition more intelligently than a simple text search.</p>
+<hr>
+</section>
+<section id="why-positron-is-not-just-a-vs-code-extension" class="level2">
+<h2 class="anchored" data-anchor-id="why-positron-is-not-just-a-vs-code-extension">Why Positron Is Not Just a VS Code Extension</h2>
+<p>Posit could have attempted to reproduce the entire data science experience through a collection of VS Code extensions. Instead, it built Positron as a fork of Code OSS.</p>
+<p>Extensions are intentionally constrained so that they can be isolated from the editor and restarted independently. This improves stability and security, but it also limits how deeply an extension can modify the workbench.</p>
+<p>A complete data science IDE requires capabilities that extend beyond ordinary language editing, including:</p>
+<ul>
+<li>interactive consoles integrated with the workbench;</li>
+<li>session-aware Variables and Plots panes;</li>
+<li>a language-independent Data Explorer;</li>
+<li>management of multiple interpreter sessions;</li>
+<li>communication between notebooks, consoles and session panes;</li>
+<li>custom user-interface components;</li>
+<li>public APIs on which additional language integrations can be built.</li>
+</ul>
+<p>Building on Code OSS gives Posit control over the workbench itself while retaining compatibility with much of the VS Code extension ecosystem.</p>
+<hr>
+</section>
+<section id="language-packs-and-session-isolation" class="level2">
+<h2 class="anchored" data-anchor-id="language-packs-and-session-isolation">Language Packs and Session Isolation</h2>
+<p>R and Python support are delivered through dedicated <strong>language packs</strong> that discover, start and manage interpreter sessions and connect the language tooling to the Positron workbench.</p>
+<p>The language session is separated from the main IDE process. This means that a failure in an R or Python session does not necessarily terminate Positron itself.</p>
+<p>This is an important difference from a tightly coupled architecture:</p>
+<pre class="text"><code>Tightly coupled design
+IDE + language session fail together
+
+Separated design
+IDE remains open
+└── failed language session can restart</code></pre>
+<p>Session isolation improves resilience, but it does not preserve unsaved in-memory objects. Data and results that exist only inside a crashed interpreter session must be recreated by rerunning the relevant code.</p>
+<hr>
+</section>
+<section id="extensions" class="level2">
+<h2 class="anchored" data-anchor-id="extensions">Extensions</h2>
+<p>Positron supports many VS Code-compatible extensions.</p>
+<p>Historically, Code OSS forks such as Positron, VSCodium and Cursor commonly relied on the vendor-neutral <strong>Open VSX Registry</strong>, because Microsoft’s Visual Studio Marketplace is not generally licensed for use by third-party distributions.</p>
+<p>Positron now uses Posit’s extension gallery infrastructure by default, serving a compatible catalogue through Posit Package Manager infrastructure; Open VSX can still be selected as an alternative source.</p>
+<p>Extensions can add support for:</p>
+<ul>
+<li>additional programming languages;</li>
+<li>linters and formatters;</li>
+<li>AI assistants;</li>
+<li>source-control workflows;</li>
+<li>cloud services;</li>
+<li>documentation tools;</li>
+<li>project management utilities.</li>
+</ul>
+<p>Third-party language extensions do not automatically receive the full Positron data science experience. Deep integration with the Console, Variables pane, Plots pane and Data Explorer requires use of Positron’s language and session APIs.</p>
+<section id="example-todo-tree" class="level3">
+<h3 class="anchored" data-anchor-id="example-todo-tree">Example: Todo Tree</h3>
+<p>The <strong>Todo Tree</strong> extension searches a project for comments such as:</p>
+<pre class="text"><code>TODO:
+FIXME:
+BUG:
+NOTE:</code></pre>
+<p>It then provides a centralized view of unfinished tasks across multiple files.</p>
+<hr>
+</section>
+</section>
+<section id="command-palette" class="level2">
+<h2 class="anchored" data-anchor-id="command-palette">Command Palette</h2>
+<p>The <strong>Command Palette</strong> provides searchable access to commands contributed by Positron and installed extensions.</p>
+<p>It can be opened with:</p>
+<pre class="text"><code>Ctrl + Shift + P</code></pre>
+<p>Instead of navigating through menus, a command can be located by typing part of its name.</p>
+<p>The Command Palette is one of the central interaction patterns inherited from Code OSS.</p>
+<hr>
+</section>
+<section id="user-interface" class="level2">
+<h2 class="anchored" data-anchor-id="user-interface">User Interface</h2>
+<section id="activity-bar" class="level3">
+<h3 class="anchored" data-anchor-id="activity-bar">Activity Bar</h3>
+<p>The Activity Bar provides access to major workbench views.</p>
+<p><strong>Explorer</strong></p>
+<ul>
+<li>browse files and folders;</li>
+<li>inspect the project structure;</li>
+<li>create, rename and move files.</li>
+</ul>
+<p><strong>Search</strong></p>
+<ul>
+<li>search across the workspace;</li>
+<li>replace text across multiple files.</li>
+</ul>
+<p><strong>Source Control</strong></p>
+<ul>
+<li>inspect Git changes;</li>
+<li>stage files;</li>
+<li>commit changes;</li>
+<li>synchronize with a remote repository;</li>
+<li>inspect branches and history.</li>
+</ul>
+<p><strong>Extensions</strong></p>
+<ul>
+<li>search for and install compatible extensions;</li>
+<li>enable, disable and update installed extensions.</li>
+</ul>
+<p><strong>Positron Assistant / Posit Assistant</strong></p>
+<ul>
+<li>provides AI-assisted programming features;</li>
+<li>can use project and session context to assist with code, debugging and data-science tasks.</li>
+</ul>
+</section>
+<section id="bottom-panel" class="level3">
+<h3 class="anchored" data-anchor-id="bottom-panel">Bottom Panel</h3>
+<p>The bottom panel can contain:</p>
+<ul>
+<li>Console;</li>
+<li>Terminal;</li>
+<li>Problems;</li>
+<li>Output;</li>
+<li>Debug Console.</li>
+</ul>
+<p>The <strong>Console</strong> communicates with the active interpreter. The <strong>Terminal</strong> communicates with the operating system shell.</p>
+<hr>
+</section>
+</section>
+<section id="help-and-code-intelligence" class="level2">
+<h2 class="anchored" data-anchor-id="help-and-code-intelligence">Help and Code Intelligence</h2>
+<section id="hover-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="hover-documentation">Hover Documentation</h3>
+<p>Hovering over a recognized function or symbol can display information such as:</p>
+<ul>
+<li>its signature;</li>
+<li>arguments;</li>
+<li>documentation;</li>
+<li>inferred type information;</li>
+<li>links to additional help.</li>
+</ul>
+<p>For R, much of this functionality is provided by Ark through the Language Server Protocol.</p>
+</section>
+<section id="console-help" class="level3">
+<h3 class="anchored" data-anchor-id="console-help">Console Help</h3>
+<p>R documentation can also be opened from the Console:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>?mean</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(mean)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="diagnostics" class="level3">
+<h3 class="anchored" data-anchor-id="diagnostics">Diagnostics</h3>
+<p>Diagnostics identify possible problems without necessarily executing the code. Examples include:</p>
+<ul>
+<li>syntax errors;</li>
+<li>invalid or incomplete expressions;</li>
+<li>unresolved symbols;</li>
+<li>style or linting issues, depending on the installed tooling.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="larger-than-memory-data" class="level2">
+<h2 class="anchored" data-anchor-id="larger-than-memory-data">Larger-than-Memory Data</h2>
+<p>The Data Explorer primarily displays data exposed through an active language session or supported files, but the complete dataset does not always need to fit in memory at once.</p>
+<p>R and Python can use tools such as:</p>
+<ul>
+<li><strong>Apache Arrow</strong>;</li>
+<li><strong>DuckDB</strong>;</li>
+<li>database connectors;</li>
+<li>lazy dataframe libraries;</li>
+<li>query engines operating on files stored on disk or on remote systems.</li>
+</ul>
+<p>In these workflows, the R or Python object can represent a query or external dataset rather than a fully materialized in-memory dataframe. Computation is pushed to the database, query engine or storage layer, and only the required results are returned.</p>
+<p>Positron does not itself remove the memory constraints of R or Python. Rather, it works with language libraries and external engines that support out-of-memory or lazy computation.</p>
+<hr>
+</section>
+<section id="keyboard-shortcuts" class="level2">
+<h2 class="anchored" data-anchor-id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+<p>Official documentation:</p>
+<p><a href="https://positron.posit.co/keyboard-shortcuts.html" class="uri">https://positron.posit.co/keyboard-shortcuts.html</a></p>
+<p>Learning a small number of keyboard shortcuts greatly improves productivity.</p>
+<hr>
+</section>
+<section id="advantages" class="level2">
+<h2 class="anchored" data-anchor-id="advantages">Advantages</h2>
+<ul>
+<li>Data-science-oriented interface;</li>
+<li>first-class R and Python support;</li>
+<li>modern Code OSS workbench;</li>
+<li>isolated and restartable language sessions;</li>
+<li>integrated Console, Variables, Plots, Help and Data Explorer;</li>
+<li>interpreter and environment management;</li>
+<li>strong Quarto, notebook and Git support;</li>
+<li>compatibility with many VS Code extensions;</li>
+<li>protocol-based architecture that can support additional languages and tools.</li>
+</ul>
+<hr>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<ul>
+<li>Some workflows still differ from RStudio and require adaptation;</li>
+<li>third-party extensions vary in quality and compatibility;</li>
+<li>extensions for other languages do not automatically obtain full session integration;</li>
+<li>the Code OSS interface can initially feel more complex than RStudio;</li>
+<li>interpreter and environment management still requires an understanding of project dependencies;</li>
+<li>objects stored only in memory are lost if their language session crashes;</li>
+<li>Positron is source-available rather than fully open source under an OSI-approved licence.</li>
+</ul>
+<hr>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<blockquote class="blockquote">
+<p><strong>A programming language, its runtime, its kernel and its IDE are different layers.</strong></p>
+<p>R defines the language, GNU R evaluates it, Ark connects the R session to compatible front ends, and Positron provides the integrated workbench.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>Compiled, interpreted and hybrid are execution models rather than perfectly exclusive language categories.</strong></p>
+<p>R and Python are experienced as interpreted languages, but their implementations can parse code, produce bytecode and call native compiled libraries during execution.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>SAS and R are not compared at only one layer.</strong></p>
+<p>SAS commonly denotes an integrated language-and-platform ecosystem, whereas R, GNU R, packages and Positron are visibly separable components.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>Positron is a workbench, not the program that evaluates R or Python code.</strong></p>
+<p>It communicates with independent language sessions and displays their results through an integrated data science interface.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>Ark provides the modern R back end.</strong></p>
+<p>It combines an R kernel, language intelligence and debugging support using standards such as the Jupyter Protocol, Language Server Protocol and Debug Adapter Protocol.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>The use of standard protocols is central to Positron’s polyglot design.</strong></p>
+<p>The IDE, language tools and debugging systems can evolve independently as long as they implement compatible requests and responses.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><strong>Tree-sitter gives tools a structural understanding of source code.</strong></p>
+<p>This structured representation supports features such as syntax highlighting, completions, diagnostics, navigation and contextual help.</p>
+</blockquote>
+<hr>
+</section>
+<section id="videos" class="level2">
+<h2 class="anchored" data-anchor-id="videos">Videos</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=I1f45REi3k4">Coding Mentor</a> <span class="citation" data-cites="codingmentors2018Compiler">(<a href="#ref-codingmentors2018Compiler" role="doc-biblioref">Coding Mentors 2018</a>)</span></li>
+<li><a href="https://www.youtube.com/watch?v=4Ir_HX4riHw">Posit PBC — Quick tour</a> <span class="citation" data-cites="positpbc2025Quick">(<a href="#ref-positpbc2025Quick" role="doc-biblioref">Posit PBC 2025</a>)</span></li>
+<li><a href="https://www.youtube.com/watch?v=8uRcB34Hhsw">Posit PBC — Introducing Positron, a new data science IDE</a> <span class="citation" data-cites="positpbc2024Introducing">(<a href="#ref-positpbc2024Introducing" role="doc-biblioref">Posit PBC 2024</a>)</span></li>
+<li><a href="https://www.youtube.com/watch?v=sq66nbjMRuA">R for the Rest of Us</a> <span class="citation" data-cites="rfortherestofus2025Pros">(<a href="#ref-rfortherestofus2025Pros" role="doc-biblioref">R for the Rest of Us 2025</a>)</span></li>
+<li><a href="https://www.youtube.com/watch?v=tvm4bJf1xzI">Susan B.</a> <span class="citation" data-cites="susanb.2026RStudio">(<a href="#ref-susanb.2026RStudio" role="doc-biblioref">Susan B. 2026</a>)</span></li>
+</ul>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-codingmentors2018Compiler" class="csl-entry" role="listitem">
+Coding Mentors. 2018. <em>Compiler and <span>Interpreter</span>: <span>Compiled Language</span> Vs <span>Interpreted Programming Languages</span></em>.
+</div>
+<div id="ref-Visual" class="csl-entry" role="listitem">
+Microsoft. 2026. <em>Visual <span>Studio Code</span></em>. Https://code.visualstudio.com/.
+</div>
+<div id="ref-Positron" class="csl-entry" role="listitem">
+PBC, Posit. 2026. <em>Positron</em>. Https://positron.posit.co/.
+</div>
+<div id="ref-positpbc2024Introducing" class="csl-entry" role="listitem">
+Posit PBC. 2024. <em>Introducing <span>Positron</span>, a New Data Science <span>IDE</span> - Posit Conf 2024</em>.
+</div>
+<div id="ref-positpbc2025Quick" class="csl-entry" role="listitem">
+Posit PBC. 2025. <em>A Quick Tour of <span>Positron</span></em>.
+</div>
+<div id="ref-rfortherestofus2025Pros" class="csl-entry" role="listitem">
+R for the Rest of Us. 2025. <em>Pros and <span>Cons</span> of <span>Positron</span></em>.
+</div>
+<div id="ref-susanb.2026RStudio" class="csl-entry" role="listitem">
+Susan B. 2026. <em>From <span>RStudio</span> to <span>Positron</span>: <span>A Better Data Science IDE</span> (<span>R</span> and <span>Python</span>)</em>.
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
