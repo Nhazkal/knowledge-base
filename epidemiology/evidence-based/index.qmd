@@ -2,6 +2,23 @@
 title: "Evidence-based practices"
 ---
 
-# Topics
+# Overview
 
-- [Evidence-based Practices](evidence-based/)
+## Evidence and recommendations
+
+### Oxman, Lavis & Fretheim (2007)
+
+**Use of evidence in WHO recommendations** [@oxman2007Use]
+
+- Examined how **WHO recommendations were actually developed**, particularly how evidence about intervention effects was incorporated. 
+- Based on interviews with WHO department directors/delegates and examination of selected WHO recommendation documents.
+- **Main finding:** despite WHO guidance promoting systematic and transparent methods, recommendations still relied heavily on **content experts and expert consensus**, while systematic reviews and concise evidence summaries were rarely used.
+- Systematic reviews are preferred over non-systematic evidence gathering because they reduce selection and interpretation bias, consider the complete body of relevant evidence, critically appraise it, and make methodological judgments transparent.
+- **Evidence alone does not determine a recommendation:** evidence about effects must be considered alongside harms, costs/resources, feasibility, context and the values of those affected.
+- Moving from **evidence → recommendation therefore requires explicit judgments** about the balance between desirable and undesirable consequences.
+- The authors argue for more systematic, transparent and defensible processes for developing, adapting, disseminating and implementing recommendations.
+
+## References
+
+::: {#refs}
+:::
