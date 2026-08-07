@@ -372,6 +372,7 @@ div.csl-indent {
   <li><a href="#compiled-languages" id="toc-compiled-languages" class="nav-link" data-scroll-target="#compiled-languages">Compiled Languages</a></li>
   <li><a href="#interpreted-languages" id="toc-interpreted-languages" class="nav-link" data-scroll-target="#interpreted-languages">Interpreted Languages</a></li>
   <li><a href="#hybrid-languages-bytecode-virtual-machines-and-jit-compilation" id="toc-hybrid-languages-bytecode-virtual-machines-and-jit-compilation" class="nav-link" data-scroll-target="#hybrid-languages-bytecode-virtual-machines-and-jit-compilation">Hybrid Languages: Bytecode, Virtual Machines and JIT Compilation</a></li>
+  <li><a href="#gnu-r" id="toc-gnu-r" class="nav-link" data-scroll-target="#gnu-r">GNU R</a></li>
   <li><a href="#python-and-r-commonly-interpreted-internally-more-complex" id="toc-python-and-r-commonly-interpreted-internally-more-complex" class="nav-link" data-scroll-target="#python-and-r-commonly-interpreted-internally-more-complex">Python and R: Commonly Interpreted, Internally More Complex</a></li>
   <li><a href="#language-implementation-and-execution-model" id="toc-language-implementation-and-execution-model" class="nav-link" data-scroll-target="#language-implementation-and-execution-model">Language, Implementation and Execution Model</a></li>
   <li><a href="#runtime" id="toc-runtime" class="nav-link" data-scroll-target="#runtime">Runtime</a></li>
@@ -607,7 +608,7 @@ div.csl-indent {
 </section>
 <section id="how-code-is-executed-compilers-interpreters-and-runtimes" class="level2">
 <h2 class="anchored" data-anchor-id="how-code-is-executed-compilers-interpreters-and-runtimes">How Code Is Executed: Compilers, Interpreters and Runtimes</h2>
-<p>Before a program can run, the computer must ultimately execute <strong>machine code</strong>: binary instructions understood by the processor. Human-readable source code must therefore be translated into machine instructions in one way or another.</p>
+<p>Before a program can run, the computer must ultimately execute <strong>machine code</strong>: binary instructions understood by the processor (0 1). Human-readable source code must therefore be translated into machine instructions in one way or another.</p>
 <p>Three broad execution models are commonly used:</p>
 <ol type="1">
 <li><strong>ahead-of-time compilation</strong>;</li>
@@ -625,7 +626,7 @@ div.csl-indent {
  Compiler
      │
      ▼
-Executable containing machine code
+Executable containing machine code (e.g. R.exe)
      │
      ▼
 Operating system loads the executable
@@ -649,11 +650,11 @@ CPU executes its instructions</code></pre>
 </ul>
 <p>Languages commonly associated with ahead-of-time compilation include:</p>
 <ul>
-<li>C;</li>
-<li>C++;</li>
-<li>Objective-C;</li>
-<li>Rust;</li>
-<li>Go.</li>
+<li>C</li>
+<li>C++</li>
+<li>Objective-C</li>
+<li>Rust</li>
+<li>Go</li>
 </ul>
 <p>Compiled programs are not necessarily completely self-contained. For example, a compiled C++ application may depend on shared libraries supplied with the operating system or installed separately.</p>
 </section>
@@ -689,10 +690,10 @@ Results are returned</code></pre>
 </ul>
 <p>Languages and environments commonly experienced as interpreted include:</p>
 <ul>
-<li>Bash and other shell languages;</li>
-<li>PHP;</li>
-<li>R;</li>
-<li>Python;</li>
+<li>Bash and other shell languages</li>
+<li>PHP</li>
+<li>R</li>
+<li>Python</li>
 <li>JavaScript used interactively in a browser or another runtime.</li>
 </ul>
 <p>JavaScript illustrates why these categories are not absolute. It is experienced as an interpreted language, but modern JavaScript engines usually combine parsing, interpretation and Just-In-Time compilation internally.</p>
@@ -735,6 +736,16 @@ CPU</code></pre>
 <li>C# and other .NET languages compiled into Common Intermediate Language and executed by the .NET runtime;</li>
 <li>JavaScript engines that interpret code initially and JIT-compile frequently executed paths.</li>
 </ul>
+</section>
+<section id="gnu-r" class="level3">
+<h3 class="anchored" data-anchor-id="gnu-r">GNU R</h3>
+<p><strong>GNU</strong> is a recursive acronym meaning <strong>“GNU’s Not Unix.”</strong> It is the name of the free-software operating-system project launched by Richard Stallman in 1983.</p>
+<p><strong>GNU R</strong> is the principal implementation of the R programming language and is part of the GNU Project. In practical terms:</p>
+<ul>
+<li><strong>R</strong> is the programming language;</li>
+<li><strong>GNU R</strong> is the main software implementation that parses and executes R code.</li>
+</ul>
+<p>When people say they have installed or are running “R,” they are usually referring to GNU R.</p>
 </section>
 <section id="python-and-r-commonly-interpreted-internally-more-complex" class="level3">
 <h3 class="anchored" data-anchor-id="python-and-r-commonly-interpreted-internally-more-complex">Python and R: Commonly Interpreted, Internally More Complex</h3>
@@ -1267,7 +1278,7 @@ Structured syntax tree
      └── contextual assistance</code></pre>
 <p>Tree-sitter is language-independent, but each language requires a grammar that defines its syntax. The Positron and Ark teams developed an R grammar for tree-sitter because an adequate grammar was not previously available for their requirements.</p>
 <p>That grammar is not limited to Positron. Other tools and editors that support tree-sitter, such as Zed or Neovim, can also use it for features such as syntax highlighting and indentation.</p>
-<p>Structural parsing can also support code-search and navigation systems. The presentation used GitHub’s code search as an example: syntax-aware indexing can make it possible to locate a symbol and navigate to its definition more intelligently than a simple text search.</p>
+<p>Structural parsing can also support code-search and navigation systems. For instance. in GitHub’s code search a syntax-aware indexing can make it possible to locate a symbol and navigate to its definition more intelligently than a simple text search.</p>
 <hr>
 </section>
 <section id="why-positron-is-not-just-a-vs-code-extension" class="level2">
