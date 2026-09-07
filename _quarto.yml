@@ -15,7 +15,7 @@ website:
         href: epidemiology/index.qmd
       - text: "Positron"
         href: positron/index.qmd
-        text: "Python"
+      - text: "Python"
         href: python/index.qmd
       - text: "R"
         href: r/index.qmd
