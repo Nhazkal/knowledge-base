@@ -8,6 +8,7 @@ A practical overview of statistical concepts, methods and tools for epidemiology
 
 - [Epidemiology](epidemiology/index.qmd)
 - [Positron](positron/index.qmd)
+- [Psychology and Psychiatry](psychology-psychiatry/)
 - [Python](python/index.qmd)
 - [R](r/index.qmd)
 - [General](general/index.qmd)

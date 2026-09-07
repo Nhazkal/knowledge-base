@@ -67,7 +67,7 @@
     "href": "index.html#topics",
     "title": "Knowledge Base",
     "section": "Topics",
-    "text": "Topics\n\nR\nPython\nPositron\nGeneral"
+    "text": "Topics\n\nEpidemiology\nPositron\nPython\nR\nGeneral"
   },
   {
     "objectID": "general/index.html",
@@ -494,7 +494,7 @@
     "href": "epidemiology/index.html",
     "title": "Epidemiology",
     "section": "",
-    "text": "Literature Review\n\n\n\nUse of evidence in WHO recommendations (Oxman et al. 2007)\n\nExamined how WHO recommendations were actually developed, particularly how evidence about intervention effects was incorporated.\nBased on interviews with WHO department directors/delegates and examination of selected WHO recommendation documents.\nMain finding: despite WHO guidance promoting systematic and transparent methods, recommendations still relied heavily on content experts and expert consensus, while systematic reviews and concise evidence summaries were rarely used.\nSystematic reviews are preferred over non-systematic evidence gathering because they reduce selection and interpretation bias, consider the complete body of relevant evidence, critically appraise it, and make methodological judgments transparent.\nEvidence alone does not determine a recommendation: evidence about effects must be considered alongside harms, costs/resources, feasibility, context and the values of those affected.\nMoving from evidence → recommendation therefore requires explicit judgments about the balance between desirable and undesirable consequences.\nThe authors argue for more systematic, transparent and defensible processes for developing, adapting, disseminating and implementing recommendations.\n\n\n\n\n\n\nOxman, Andrew D., John N. Lavis, and Atle Fretheim. 2007. “Use of Evidence in WHO Recommendations.” Lancet (London, England) 369 (9576): 1883–89. https://doi.org/10.1016/S0140-6736(07)60675-8."
+    "text": "Topics\n\nEvidence-based Practices\nLiterature Review"
   },
   {
     "objectID": "epidemiology/literature-review/index.html#scoping-reviews",
@@ -522,6 +522,20 @@
     "href": "epidemiology/evidence-based/index.html",
     "title": "Evidence-based practices",
     "section": "",
-    "text": "Topics\n\nEvidence-based Practices"
+    "text": "Use of evidence in WHO recommendations (Oxman et al. 2007)\n\nExamined how WHO recommendations were actually developed, particularly how evidence about intervention effects was incorporated.\nBased on interviews with WHO department directors/delegates and examination of selected WHO recommendation documents.\nMain finding: despite WHO guidance promoting systematic and transparent methods, recommendations still relied heavily on content experts and expert consensus, while systematic reviews and concise evidence summaries were rarely used.\nSystematic reviews are preferred over non-systematic evidence gathering because they reduce selection and interpretation bias, consider the complete body of relevant evidence, critically appraise it, and make methodological judgments transparent.\nEvidence alone does not determine a recommendation: evidence about effects must be considered alongside harms, costs/resources, feasibility, context and the values of those affected.\nMoving from evidence → recommendation therefore requires explicit judgments about the balance between desirable and undesirable consequences.\nThe authors argue for more systematic, transparent and defensible processes for developing, adapting, disseminating and implementing recommendations.\n\n\n\n\n\n\n\nOxman, Andrew D., John N. Lavis, and Atle Fretheim. 2007. “Use of Evidence in WHO Recommendations.” Lancet (London, England) 369 (9576): 1883–89. https://doi.org/10.1016/S0140-6736(07)60675-8."
+  },
+  {
+    "objectID": "epidemiology/evidence-based/index.html#evidence-and-recommendations",
+    "href": "epidemiology/evidence-based/index.html#evidence-and-recommendations",
+    "title": "Evidence-based practices",
+    "section": "",
+    "text": "Use of evidence in WHO recommendations (Oxman et al. 2007)\n\nExamined how WHO recommendations were actually developed, particularly how evidence about intervention effects was incorporated.\nBased on interviews with WHO department directors/delegates and examination of selected WHO recommendation documents.\nMain finding: despite WHO guidance promoting systematic and transparent methods, recommendations still relied heavily on content experts and expert consensus, while systematic reviews and concise evidence summaries were rarely used.\nSystematic reviews are preferred over non-systematic evidence gathering because they reduce selection and interpretation bias, consider the complete body of relevant evidence, critically appraise it, and make methodological judgments transparent.\nEvidence alone does not determine a recommendation: evidence about effects must be considered alongside harms, costs/resources, feasibility, context and the values of those affected.\nMoving from evidence → recommendation therefore requires explicit judgments about the balance between desirable and undesirable consequences.\nThe authors argue for more systematic, transparent and defensible processes for developing, adapting, disseminating and implementing recommendations."
+  },
+  {
+    "objectID": "epidemiology/evidence-based/index.html#references",
+    "href": "epidemiology/evidence-based/index.html#references",
+    "title": "Evidence-based practices",
+    "section": "",
+    "text": "Oxman, Andrew D., John N. Lavis, and Atle Fretheim. 2007. “Use of Evidence in WHO Recommendations.” Lancet (London, England) 369 (9576): 1883–89. https://doi.org/10.1016/S0140-6736(07)60675-8."
   }
 ]

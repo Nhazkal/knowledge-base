@@ -13,14 +13,16 @@ website:
         href: index.qmd
       - text: "Epidemiology"
         href: epidemiology/index.qmd
-      - text: "R"
-        href: r/index.qmd
-      - text: "Python"
-        href: python/index.qmd
       - text: "Positron"
         href: positron/index.qmd
+        text: "Python"
+        href: python/index.qmd
+      - text: "R"
+        href: r/index.qmd
       - text: "General"
         href: general/index.qmd
+      - href: psychology-psychiatry/index.qmd
+        text: Psychology & Psychiatry
 
     tools:
       - icon: github
