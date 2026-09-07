@@ -1,7 +1,649 @@
 ---
-title: "Psychology and Psychiatry"
+title: "Depression"
 ---
 
-# Topics
+::: {.callout-note}
+## Sources and currency
 
-- [Depression](depression/)
+**Original learning source:** PsychEd podcast  
+**Primary diagnostic reference:** DSM-5-TR (2022)  
+**Primary treatment guideline:** CANMAT 2023 Update (published 2024)  
+**Secondary guidelines:** NICE NG222 and VA/DoD Clinical Practice Guideline for MDD  
+**Last knowledge-base review:** September 2026
+
+Diagnostic criteria are based primarily on the **DSM-5-TR** [@APA2022DSM5TR].
+
+Treatment recommendations are based primarily on the Canadian **CANMAT 2023 Update** [@Lam2024CANMAT], supplemented by NICE [@NICE2022Depression] and VA/DoD guidance [@VADoD2022MDD].
+:::
+
+# Diagnosis
+
+## Major depressive episode
+
+A **major depressive episode (MDE)** requires **≥5 of 9 symptoms during the same ≥2-week period**, representing a change from previous functioning [@APA2022DSM5TR].
+
+At least **one** of the symptoms must be:
+
+1. **Depressed mood**, or
+2. **Loss of interest or pleasure (anhedonia)**.
+
+The symptoms must cause clinically significant distress or impairment and not be better explained by another condition.
+
+## SIGECAPS
+
+| | Symptom | Manifestation |
+|---|---|---|
+| **S** | Sleep | Insomnia or hypersomnia |
+| **I** | Interest | Diminished interest or pleasure (**anhedonia**) |
+| **G** | Guilt | Worthlessness or excessive/inappropriate guilt |
+| **E** | Energy | Fatigue or loss of energy |
+| **C** | Concentration | Poor concentration or indecisiveness |
+| **A** | Appetite | Appetite/weight decrease or increase |
+| **P** | Psychomotor | Observable agitation or retardation |
+| **S** | Suicide | Recurrent thoughts of death, suicidal ideation, plan or attempt |
+| **M** | Mood | Depressed mood most of the day |
+
+Most symptoms must occur **most of the day, nearly every day**, although the precise frequency requirement differs somewhat by symptom [@APA2022DSM5TR].
+
+A useful conceptual grouping is:
+
+### Core affective symptoms
+
+- Depressed mood
+- Anhedonia / loss of interest
+
+### Neurovegetative and somatic symptoms
+
+- Sleep
+- Appetite/weight
+- Energy
+- Psychomotor change
+
+### Cognitive symptoms
+
+- Concentration/indecisiveness
+- Worthlessness/excessive guilt
+- Thoughts of death or suicide
+
+::: {.callout-important}
+## Diagnostic threshold
+
+**MDE = ≥5/9 symptoms + ≥2 weeks + depressed mood or anhedonia + clinically significant distress/impairment.**
+
+SIGECAPS contains **nine** symptoms. The diagnostic threshold is therefore **5/9**, not 5/8.
+:::
+
+# MDE vs major depressive disorder
+
+A **major depressive episode** describes an episode of symptoms.
+
+**Major depressive disorder (MDD)** is the disorder in which one or more major depressive episodes occur without a history of manic or hypomanic episodes that would instead establish a bipolar disorder [@APA2022DSM5TR].
+
+This distinction is critical because a person presenting with depression may actually have **bipolar depression**.
+
+# Always assess for bipolarity
+
+Before concluding that depression represents unipolar MDD, ask about previous periods of **elevated, expansive, or markedly irritable mood associated with increased energy or activity**.
+
+Relevant features include:
+
+- decreased need for sleep
+- increased talkativeness
+- racing thoughts / flight of ideas
+- increased self-esteem or grandiosity
+- distractibility
+- increased goal-directed activity
+- psychomotor activation
+- impulsive or high-risk behaviour
+
+## Mania vs hypomania
+
+| | Mania | Hypomania |
+|---|---|---|
+| **Duration** | Usually ≥1 week, or any duration if hospitalization is necessary | ≥4 consecutive days |
+| **Change from baseline** | Yes | Yes |
+| **Marked functional impairment** | May/typically occur | No |
+| **Hospitalization** | May be required | By definition, not required because of the episode |
+| **Psychosis** | May occur | If psychosis occurs, the episode is manic |
+
+[@APA2022DSM5TR]
+
+## Bipolar I vs Bipolar II
+
+**Bipolar I disorder**
+
+- requires ≥1 **manic episode**
+- a major depressive episode is **not required**
+
+**Bipolar II disorder**
+
+- requires ≥1 **hypomanic episode**
+- requires ≥1 **major depressive episode**
+- no history of a manic episode
+
+::: {.callout-warning}
+## Why bipolar screening matters
+
+**Bipolar depression ≠ unipolar MDD.**
+
+Treatment differs substantially. Antidepressant monotherapy is not generally the default treatment for bipolar depression; mood stabilizers and selected atypical antipsychotics have a central role.
+
+Therefore, a history of mania/hypomania should be actively sought before treating an apparent depressive disorder.
+:::
+
+# Persistent depressive disorder
+
+**Persistent depressive disorder (PDD; dysthymia)** involves depressed mood for most of the day, more days than not, for **≥2 years in adults** [@APA2022DSM5TR].
+
+At least two additional symptoms are present:
+
+- poor appetite or overeating
+- insomnia or hypersomnia
+- low energy or fatigue
+- low self-esteem
+- poor concentration or difficulty making decisions
+- hopelessness
+
+PDD is sometimes described as a **milder but longer-lasting depression**, but this is potentially misleading: chronic depressive symptoms can cause substantial impairment, and periods meeting full MDE criteria may occur during the chronic illness.
+
+# Clinical assessment
+
+Diagnosis should not stop at counting SIGECAPS symptoms.
+
+Assessment should incorporate symptom severity, functional impairment, safety, psychiatric and medical comorbidity, previous treatment response, and patient preferences [@Lam2024CANMAT].
+
+## Severity and functioning
+
+Assess:
+
+- symptom burden
+- occupational/academic functioning
+- relationships and social functioning
+- self-care
+- psychotic symptoms
+- catatonic features when relevant
+
+Validated instruments such as the **PHQ-9** can quantify symptom severity and monitor change over time, but **do not replace clinical diagnosis** [@Lam2024CANMAT; @NICE2022Depression].
+
+# Suicide and self-harm assessment
+
+Suicidal ideation is one of the nine MDE symptoms, but suicide risk assessment should **not** be reduced to a SIGECAPS checkbox.
+
+Assess directly:
+
+- thoughts of death
+- suicidal ideation
+- intent
+- plan
+- access to means
+- previous suicide attempts or self-harm
+- recent precipitants
+- protective factors
+
+Suicide risk should also be reassessed during treatment when clinically indicated, particularly during periods of deterioration or treatment change [@NICE2022Depression].
+
+# Differential diagnosis and comorbidity
+
+## Psychiatric conditions
+
+Important differential diagnoses and comorbidities include:
+
+- **bipolar disorder**
+- anxiety disorders
+- trauma- and stressor-related disorders
+- substance-use disorders
+- eating disorders
+- ADHD when clinically relevant
+- personality disorders
+- grief and adjustment disorders
+
+## Medical, medication and substance contributors
+
+Depressive symptoms can also result from or be worsened by medical conditions, medications, and substances.
+
+Examples include:
+
+- hypothyroidism
+- anemia or nutritional deficiencies
+- obstructive sleep apnea
+- neurological disorders (e.g., Parkinson disease, multiple sclerosis, stroke)
+- endocrine disorders
+- chronic systemic illness
+- alcohol or other substance use
+- medication adverse effects
+
+Investigations should generally be guided by **history, examination and clinical context**, rather than indiscriminate laboratory screening.
+
+# Treatment
+
+## General principles
+
+Modern depression treatment is better conceptualized as **individualized, shared and measurement-based care** than as a rigid medication-first algorithm [@Lam2024CANMAT].
+
+Treatment selection considers:
+
+- symptom severity
+- chronicity and recurrence
+- previous treatment response
+- patient preference
+- functional impairment
+- suicide risk
+- psychotic or catatonic features
+- psychiatric and medical comorbidity
+- adverse-effect profiles
+- medication interactions
+- accessibility and cost of treatment
+
+# Less severe depression
+
+Initial options can include:
+
+- psychoeducation
+- active monitoring
+- guided self-help
+- behavioural activation
+- structured psychotherapy
+- exercise and behavioural interventions
+
+Antidepressants are **not automatically necessary for every patient with less severe depression**.
+
+NICE recommends not routinely offering antidepressants as first-line treatment for less severe depression unless this represents the person's informed preference [@NICE2022Depression].
+
+# Moderate to severe depression
+
+Evidence-based treatment can involve:
+
+- **psychotherapy**
+- **antidepressant pharmacotherapy**
+- **psychotherapy + pharmacotherapy**
+
+Combination treatment becomes particularly attractive with greater severity, chronic or recurrent illness, substantial functional impairment, or incomplete response to a single modality [@Lam2024CANMAT].
+
+# Psychotherapy
+
+## Cognitive behavioural therapy (CBT)
+
+**CBT** is one of the best-established psychological treatments for depression [@Lam2024CANMAT].
+
+A simplified model is:
+
+> **Situation → thoughts/cognitions → emotions → behaviours**
+
+Depression can be maintained by:
+
+- negative automatic thoughts
+- cognitive distortions
+- avoidance
+- behavioural withdrawal
+- reduced exposure to rewarding experiences
+
+CBT therefore targets both **cognitive patterns and behaviour**.
+
+## Behavioural activation (BA)
+
+**Behavioural activation** is an evidence-based treatment in its own right [@Lam2024CANMAT].
+
+It focuses on:
+
+- identifying avoidance and withdrawal
+- progressively increasing meaningful/rewarding activity
+- reconnecting behaviour with personal goals
+- increasing positive reinforcement
+- reducing behavioural patterns that maintain depression
+
+## Interpersonal psychotherapy (IPT)
+
+**IPT** is a structured, time-limited psychotherapy focusing on the relationship between mood and interpersonal functioning.
+
+Classical problem areas include:
+
+1. **Grief**
+2. **Role transitions** — major life changes
+3. **Role disputes** — interpersonal conflict
+4. **Interpersonal difficulties/deficits**
+
+## Mindfulness-based cognitive therapy (MBCT)
+
+**MBCT** combines mindfulness practices with elements of CBT.
+
+Its particularly established role is **relapse prevention in recurrent depression**, although mindfulness-based approaches may also have roles in acute treatment [@Lam2024CANMAT].
+
+# Pharmacotherapy
+
+Medication choice depends on the balance between:
+
+- expected efficacy
+- tolerability
+- previous response
+- comorbidities
+- drug interactions
+- patient preferences
+- safety
+- cost/accessibility
+
+Rather than thinking of exactly **four first-line antidepressant classes**, contemporary guidelines recommend specific agents based on their evidence and the characteristics of the individual patient [@Lam2024CANMAT].
+
+## SSRIs
+
+**Selective serotonin reuptake inhibitors**
+
+Examples:
+
+- sertraline
+- escitalopram
+- fluoxetine
+- citalopram
+- paroxetine
+
+Common adverse effects include:
+
+- nausea/GI symptoms
+- headache
+- insomnia or somnolence
+- early activation/anxiety
+- sexual dysfunction
+
+SSRIs are frequently selected because of their overall balance of **efficacy, tolerability, safety and clinical experience**, rather than because they are universally more efficacious than other antidepressants.
+
+## SNRIs
+
+**Serotonin-norepinephrine reuptake inhibitors**
+
+Examples:
+
+- venlafaxine
+- desvenlafaxine
+- duloxetine
+
+Potential adverse effects include:
+
+- nausea
+- sexual dysfunction
+- discontinuation symptoms
+- blood-pressure increases with some agents/doses
+
+Duloxetine can be useful when depression coexists with certain **chronic pain syndromes**.
+
+## Bupropion — NDRI
+
+**Bupropion** primarily inhibits norepinephrine and dopamine reuptake.
+
+Potential advantages:
+
+- relatively low sexual adverse-effect burden
+- activating profile
+- potentially useful when fatigue/low energy are prominent
+
+Important limitation:
+
+- **lowers the seizure threshold**
+
+It is contraindicated in seizure disorders and generally avoided in circumstances substantially increasing seizure risk, including active anorexia nervosa or bulimia nervosa.
+
+## Mirtazapine — NaSSA
+
+**Mirtazapine** is a noradrenergic and specific serotonergic antidepressant.
+
+Characteristic effects include:
+
+- sedation
+- increased appetite
+- weight gain
+
+These effects can sometimes be therapeutically useful when depression is accompanied by **insomnia or reduced appetite/weight loss**.
+
+## Other antidepressants
+
+Other agents/classes used depending on circumstances include:
+
+- vortioxetine
+- vilazodone
+- trazodone
+- tricyclic antidepressants (TCAs)
+- monoamine oxidase inhibitors (MAOIs)
+
+TCAs and MAOIs remain effective treatments but are generally used later because of tolerability, toxicity, interaction, and/or dietary considerations.
+
+# Antidepressants and the "serotonin hypothesis"
+
+The simple model:
+
+> **Depression = too little serotonin → antidepressant increases serotonin → depression improves**
+
+is **not an adequate modern explanation** of either depression or antidepressant efficacy.
+
+Serotonin and other monoamine signalling are involved, but reuptake inhibition occurs rapidly whereas clinical improvement evolves over a longer period. Therapeutic effects likely involve downstream changes in receptor signalling, neural plasticity, stress-response systems, and distributed brain networks.
+
+Thus, antidepressants should not simply be conceptualized as "correcting a serotonin deficiency."
+
+# Serotonin syndrome
+
+**Serotonin syndrome** results from excessive serotonergic activity, particularly when serotonergic drugs are combined.
+
+Potentially relevant drugs/substances include:
+
+- SSRIs
+- SNRIs
+- MAOIs
+- tramadol
+- linezolid
+- lithium
+- other serotonergic agents
+
+A useful clinical framework is:
+
+> **Mental-status changes + autonomic hyperactivity + neuromuscular abnormalities**
+
+Possible manifestations include:
+
+- agitation/confusion
+- diaphoresis
+- hyperthermia
+- tachycardia
+- diarrhea
+- tremor
+- hyperreflexia
+- **clonus**
+
+Severe serotonin syndrome can be life-threatening.
+
+::: {.callout-warning}
+## Medication interactions
+
+Medication reconciliation and interaction checking are important when antidepressants are prescribed, particularly when multiple serotonergic drugs are involved.
+:::
+
+# How quickly do antidepressants work?
+
+The traditional statement that antidepressants simply **"take 4–6 weeks to kick in"** is too simplistic.
+
+Some improvement can occur during the **first 1–2 weeks**, while determining the magnitude and adequacy of the response generally requires several weeks at a therapeutic dose.
+
+Treatment should therefore be actively monitored rather than prescribed and simply left unchanged for months.
+
+NICE recommends reviewing treatment response, adherence, adverse effects and relevant safety concerns early after treatment initiation [@NICE2022Depression].
+
+# Inadequate response
+
+Before concluding that treatment has failed, ask:
+
+**Was this actually an adequate treatment trial?**
+
+Reassess:
+
+- diagnosis
+- possible missed bipolar disorder
+- adherence
+- adequate dose
+- adequate duration
+- adverse effects
+- substance use
+- medical and psychiatric comorbidity
+- psychosocial factors
+
+If response remains inadequate, several strategies are possible [@Lam2024CANMAT; @VADoD2022MDD].
+
+## Optimize
+
+Increase the dose when appropriate and tolerated.
+
+## Switch
+
+Switch to another antidepressant, either within or outside the same pharmacological class.
+
+## Combine psychotherapy and pharmacotherapy
+
+Add psychotherapy to medication, or pharmacotherapy to psychotherapy, when appropriate.
+
+## Augment
+
+Add a treatment that is not simply another antidepressant.
+
+Evidence-supported adjunctive strategies include, depending on the clinical situation:
+
+- selected second-generation antipsychotics (e.g., aripiprazole or quetiapine)
+- lithium
+- other specialist augmentation strategies
+
+# Treatment-resistant depression
+
+There is no completely universal definition of **treatment-resistant depression (TRD)**.
+
+A commonly used operational definition is persistent clinically significant depression despite **≥2 adequate treatment trials** [@Lam2024CANMAT; @NICE2022Depression].
+
+At this stage, reconsider:
+
+- diagnosis
+- bipolarity
+- comorbidities
+- adherence
+- adequacy of previous treatments
+- psychotherapy
+- augmentation strategies
+- neuromodulation
+- newer pharmacological/interventional treatments
+
+# Electroconvulsive therapy (ECT)
+
+**ECT**, not ACT, is performed under:
+
+- general anesthesia
+- muscle relaxation
+- physiological monitoring
+
+A controlled electrical stimulus induces a **therapeutic generalized seizure**.
+
+ECT is among the most effective acute treatments for severe depression and may be particularly important when [@Lam2024CANMAT; @NICE2022Depression]:
+
+- depression is severe or treatment-resistant
+- psychotic depression is present
+- catatonia is present
+- suicide risk is severe
+- a rapid response is required
+- inability to eat/drink or profound functional deterioration creates medical risk
+
+## Cognitive adverse effects
+
+Potential cognitive effects include:
+
+- transient confusion after treatment
+- anterograde memory difficulties around the treatment period
+- retrograde autobiographical memory loss
+
+The extent and persistence of memory effects vary substantially between individuals.
+
+# Repetitive transcranial magnetic stimulation (rTMS)
+
+**rTMS** uses rapidly changing magnetic fields applied through the scalp to modulate targeted cortical networks.
+
+Unlike ECT:
+
+- it does **not intentionally induce a seizure**
+- it usually requires **no anesthesia**
+- cognitive adverse effects are substantially less prominent
+
+It is an established option for depression that has not adequately responded to initial treatments [@Lam2024CANMAT].
+
+Treatment generally consists of repeated outpatient sessions.
+
+Common adverse effects include:
+
+- scalp discomfort
+- headache
+
+Seizure is a rare complication.
+
+## Theta-burst stimulation (TBS)
+
+**TBS** is a patterned form of transcranial magnetic stimulation that can deliver a treatment session considerably more rapidly than conventional rTMS.
+
+# Ketamine and esketamine
+
+Ketamine-based therapies act primarily through **glutamatergic/NMDA-related mechanisms**, distinguishing them from conventional monoaminergic antidepressants.
+
+They can produce antidepressant effects considerably more rapidly than traditional antidepressants and have a role in selected patients with difficult-to-treat depression [@Lam2024CANMAT].
+
+Potential issues include:
+
+- dissociation
+- transient blood-pressure elevation
+- sedation
+- misuse potential
+- requirement for supervised administration and monitoring
+
+Availability and regulatory indications vary by jurisdiction.
+
+# Practical diagnostic and treatment algorithm
+
+```{mermaid}
+flowchart TD
+    A[Depressive symptoms] --> B{Major depressive episode?}
+
+    B -->|No| C[Consider alternative diagnosis<br/>or subthreshold depression]
+    B -->|Yes| D[Assess safety:<br/>suicidality, psychosis,<br/>catatonia, severe functional compromise]
+
+    D --> E{Previous mania<br/>or hypomania?}
+
+    E -->|Yes| F[Evaluate for bipolar disorder]
+    E -->|No| G[Evaluate medical, medication<br/>and substance contributors]
+
+    G --> H[Assess severity, functioning,<br/>comorbidity and patient preferences]
+
+    H --> I{Less severe?}
+
+    I -->|Yes| J[Psychological / behavioural<br/>interventions ± medication]
+    I -->|No| K[Psychotherapy and/or<br/>antidepressant pharmacotherapy]
+
+    J --> L[Measure response]
+    K --> L
+
+    L --> M{Adequate response?}
+
+    M -->|Yes| N[Continuation treatment<br/>and relapse prevention]
+    M -->|No| O[Reassess diagnosis, adherence,<br/>dose and duration]
+
+    O --> P[Optimize / switch /<br/>combine / augment]
+
+    P --> Q{Persistent inadequate<br/>response?}
+
+    Q -->|No| N
+    Q -->|Yes| R[Specialist strategies:<br/>augmentation, rTMS/TBS,<br/>ketamine/esketamine, ECT]
+```
+
+# Key takeaways
+
+::: {.callout-tip}
+## Depression in one framework
+
+1. **Diagnose:** ≥5/9 symptoms for ≥2 weeks, including depressed mood or anhedonia.
+2. **Assess safety:** suicidality, psychosis, catatonia and severe functional compromise.
+3. **Exclude bipolarity:** previous mania/hypomania fundamentally changes diagnosis and management.
+4. **Consider mimics and comorbidities.**
+5. **Assess severity and functioning.**
+6. **Individualize treatment:** psychotherapy, pharmacotherapy, or both.
+7. **Measure response rather than assuming treatment is working.**
+8. **Inadequate response:** optimize, switch, combine or augment.
+9. **Persistent/severe illness:** consider specialist treatments including rTMS/TBS, ketamine/esketamine and ECT.
+:::
+
+# References
